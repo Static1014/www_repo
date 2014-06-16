@@ -17,6 +17,7 @@ void UncaughtExceptionHandler(NSException *exception) {
     NSString *url = [NSString stringWithFormat:@"===================异常崩溃报告===================\ndate:%@\n\nname:%@\n\nreason:%@\n\ncallStackSymbols:\n%@",[NSDate date],name,reason,[arr componentsJoinedByString:@"\n"]];
     NSString *fileName = [NSString stringWithFormat:@"Exception_%@.txt",[NSDate date]];
     NSString *path = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:fileName];
+    
     [url writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:nil];
 }
 

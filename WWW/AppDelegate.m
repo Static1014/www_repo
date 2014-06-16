@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "OneViewController.h"
+#import "ThreeViewController.h"
 #import "MyUncaughtExceptionHandler.h"
 
 @implementation AppDelegate
@@ -18,12 +19,24 @@
 
     [MyUncaughtExceptionHandler setDefaultHandler];
 
-    OneViewController *root = [[OneViewController alloc]initWithNibName:@"OneViewController" bundle:nil];
-    UINavigationController *navc = [[UINavigationController alloc]initWithRootViewController:root];
+    OneViewController *one = [[OneViewController alloc]initWithNibName:@"OneViewController" bundle:nil];
+    UINavigationController *navc = [[UINavigationController alloc]initWithRootViewController:one];
     navc.navigationBar.translucent = NO;
-    self.window.rootViewController = navc;
-    [root release];
+
+    ThreeViewController *three = [[ThreeViewController alloc]initWithNibName:@"ThreeViewController" bundle:nil];
+
+    UITabBarController *tabBar = [[UITabBarController alloc]init];
+    tabBar.viewControllers = [NSArray arrayWithObjects:navc,three,nil];
+    UITabBarItem *left = [[UITabBarItem alloc]initWithTitle:@"One" image:[UIImage imageNamed:@"item.png"] selectedImage:[UIImage imageNamed:@"item.png"]];
+    UITabBarItem *right = [[UITabBarItem alloc]initWithTitle:@"three" image:[UIImage imageNamed:@"item.png"] selectedImage:[UIImage imageNamed:@"item.png"]];
+    [tabBar.tabBar addSubview:left];
+    [tabBar.tabBar addSubview:left];
+
+    self.window.rootViewController = tabBar;
+    [one release];
     [navc release];
+    [three release];
+    [tabBar release];
     [self.window makeKeyAndVisible];
     return YES;
 }

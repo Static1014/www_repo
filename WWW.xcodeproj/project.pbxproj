@@ -12,6 +12,8 @@
 		B310E0ED1938702A00A660A2 /* section_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B310E0EC1938702900A660A2 /* section_bg.png */; };
 		B310E0F21938816000A660A2 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B310E0F01938816000A660A2 /* TwoViewController.m */; };
 		B310E0F31938816000A660A2 /* TwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B310E0F11938816000A660A2 /* TwoViewController.xib */; };
+		B37CF35E194EEA9D0064EA15 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37CF35C194EEA9D0064EA15 /* ThreeViewController.m */; };
+		B37CF35F194EEA9D0064EA15 /* ThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37CF35D194EEA9D0064EA15 /* ThreeViewController.xib */; };
 		B3AA41AA194A867700579A3D /* MyUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA41A9194A867700579A3D /* MyUncaughtExceptionHandler.m */; };
 		B3DCDAA8193EE9C200BAD04B /* DBCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DCDAA7193EE9C200BAD04B /* DBCommon.m */; };
 		B3DCDAAA193EF8D000BAD04B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DCDAA9193EF8D000BAD04B /* libsqlite3.dylib */; };
@@ -52,6 +54,9 @@
 		B310E0EF1938816000A660A2 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		B310E0F01938816000A660A2 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		B310E0F11938816000A660A2 /* TwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoViewController.xib; sourceTree = "<group>"; };
+		B37CF35B194EEA9D0064EA15 /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		B37CF35C194EEA9D0064EA15 /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		B37CF35D194EEA9D0064EA15 /* ThreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeViewController.xib; sourceTree = "<group>"; };
 		B3AA41A8194A867700579A3D /* MyUncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		B3AA41A9194A867700579A3D /* MyUncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		B3DCDAA6193EE9C200BAD04B /* DBCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCommon.h; sourceTree = "<group>"; };
@@ -127,6 +132,16 @@
 			name = Two;
 			sourceTree = "<group>";
 		};
+		B37CF35A194EEA740064EA15 /* Three */ = {
+			isa = PBXGroup;
+			children = (
+				B37CF35B194EEA9D0064EA15 /* ThreeViewController.h */,
+				B37CF35C194EEA9D0064EA15 /* ThreeViewController.m */,
+				B37CF35D194EEA9D0064EA15 /* ThreeViewController.xib */,
+			);
+			name = Three;
+			sourceTree = "<group>";
+		};
 		B3DCDAA5193EE8D500BAD04B /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +191,7 @@
 		B3E87E6219357938006F8DF4 /* WWW */ = {
 			isa = PBXGroup;
 			children = (
+				B37CF35A194EEA740064EA15 /* Three */,
 				B3DCDAA5193EE8D500BAD04B /* Common */,
 				B3E87E8B193579E2006F8DF4 /* One */,
 				B310E0EE1938812B00A660A2 /* Two */,
@@ -315,6 +331,7 @@
 				B3E87E6F19357938006F8DF4 /* Images.xcassets in Resources */,
 				B3E32992194004B20041817A /* w.db in Resources */,
 				B3E87E90193579FB006F8DF4 /* OneViewController.xib in Resources */,
+				B37CF35F194EEA9D0064EA15 /* ThreeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +359,7 @@
 				B310E0F21938816000A660A2 /* TwoViewController.m in Sources */,
 				B3AA41AA194A867700579A3D /* MyUncaughtExceptionHandler.m in Sources */,
 				B3E87E6919357938006F8DF4 /* main.m in Sources */,
+				B37CF35E194EEA9D0064EA15 /* ThreeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

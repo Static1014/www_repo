@@ -45,8 +45,9 @@
 
     [self initScrollView];
 
-    NSArray *test = [NSArray arrayWithObjects:@"111", nil];
-    NSLog(@"%@",[NSString stringWithFormat:@"%@",[test objectAtIndex:1]]);
+//    测试捕获异常
+//    NSArray *test = [NSArray arrayWithObjects:@"111", nil];
+//    NSLog(@"%@",[NSString stringWithFormat:@"%@",[test objectAtIndex:1]]);
 }
 
 - (void)initScrollView {

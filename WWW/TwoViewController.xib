@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwoViewController">
             <connections>
+                <outlet property="bottomView" destination="YJe-Zn-M3c" id="t6e-tN-2XR"/>
                 <outlet property="btnAdd" destination="VFX-1D-72x" id="R5J-zH-LOj"/>
                 <outlet property="btnSend" destination="o6K-rx-Smv" id="mWo-3C-wpb"/>
                 <outlet property="editView" destination="RiI-LB-a2D" id="8cS-rO-VdD"/>
@@ -20,43 +21,51 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="utr-Yl-1AH">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                     <autoresizingMask key="autoresizingMask" heightSizable="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </scrollView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VFX-1D-72x">
-                    <rect key="frame" x="8" y="527" width="30" height="30"/>
+                <view contentMode="scaleToFill" id="YJe-Zn-M3c">
+                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                    <state key="normal" title="+">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="clickAdd:" destination="-1" eventType="touchUpInside" id="Uo3-72-aOJ"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o6K-rx-Smv">
-                    <rect key="frame" x="281" y="528" width="36" height="30"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Send">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="clickSend:" destination="-1" eventType="touchUpInside" id="EUu-1R-G5Q"/>
-                    </connections>
-                </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" background="section_bg.png" id="RiI-LB-a2D">
-                    <rect key="frame" x="45" y="533" width="231" height="30"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                    <connections>
-                        <action selector="inputBegin:" destination="-1" eventType="editingDidBegin" id="XQA-SN-Ltc"/>
-                        <action selector="inputChange:" destination="-1" eventType="editingChanged" id="YtI-wj-r93"/>
-                        <action selector="inputEnd:" destination="-1" eventType="editingDidEnd" id="dzp-Qw-i43"/>
-                        <action selector="inputExit:" destination="-1" eventType="editingDidEndOnExit" id="ukE-cD-0Ci"/>
-                    </connections>
-                </textField>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VFX-1D-72x">
+                            <rect key="frame" x="5" y="8" width="29" height="29"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <state key="normal" title="+">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickAdd:" destination="-1" eventType="touchUpInside" id="Uo3-72-aOJ"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" background="section_bg.png" id="RiI-LB-a2D">
+                            <rect key="frame" x="38" y="10" width="231" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            <connections>
+                                <action selector="inputBegin:" destination="-1" eventType="editingDidBegin" id="XQA-SN-Ltc"/>
+                                <action selector="inputChange:" destination="-1" eventType="editingChanged" id="YtI-wj-r93"/>
+                                <action selector="inputEnd:" destination="-1" eventType="editingDidEnd" id="dzp-Qw-i43"/>
+                                <action selector="inputExit:" destination="-1" eventType="editingDidEndOnExit" id="ukE-cD-0Ci"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o6K-rx-Smv">
+                            <rect key="frame" x="277" y="10" width="36" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <state key="normal" title="Send">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickSend:" destination="-1" eventType="touchUpInside" id="EUu-1R-G5Q"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

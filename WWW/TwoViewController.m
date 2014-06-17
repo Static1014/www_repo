@@ -110,6 +110,7 @@
     [_btnAdd release];
     [_editView release];
     [_btnSend release];
+    [_bottomView release];
     [super dealloc];
 }
 
@@ -206,12 +207,13 @@
     [_scrollView addSubview:cell];
     [cell release];
 
-    if (_scrollView.contentSize.height + cell.frame.size.height > _scrollView.frame.size.height) {
-        [_scrollView setContentOffset:CGPointMake(_scrollView.contentOffset.x, _scrollView.contentSize.height - _scrollView.bounds.size.height +cell.frame.size.height) animated:YES];
-    }
     CGSize size = _scrollView.contentSize;
     size.height += cell.frame.size.height;
     [_scrollView setContentSize:size];
+    
+    if (_scrollView.contentSize.height + cell.frame.size.height > _scrollView.frame.size.height) {
+        [_scrollView setContentOffset:CGPointMake(_scrollView.contentOffset.x, _scrollView.contentSize.height - _scrollView.bounds.size.height +cell.frame.size.height) animated:YES];
+    }
 }
 
 - (IBAction)inputChange:(id)sender {
@@ -269,12 +271,16 @@
         length += tabbarHeight;
         keyBoardIsOpen = YES;
     }
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:0.2f];
-    CGRect frame = self.view.frame;
-    frame.origin.y = frame.origin.y + length;
-    [self.view setFrame:frame];
-    [UIView commitAnimations];
+
+    [UIView animateWithDuration:0.2 animations:^{
+        CGRect scrollViewFrame = _scrollView.frame;
+        scrollViewFrame.size.height += length;
+        _scrollView.frame = scrollViewFrame;
+
+        CGRect bottomViewFrame = _bottomView.frame;
+        bottomViewFrame.origin.y += length;
+        _bottomView.frame = bottomViewFrame;
+    }];
 }
 
 - (void)keyboardWasChanged:(NSNotification*)notification

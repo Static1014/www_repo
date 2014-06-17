@@ -14,6 +14,7 @@
 @property (retain, nonatomic) IBOutlet UITextField *editView;
 @property (retain, nonatomic) IBOutlet UIButton *btnAdd;
 @property (retain, nonatomic) IBOutlet UIButton *btnSend;
+@property (retain, nonatomic) IBOutlet UIView *bottomView;
 
 @property (retain, nonatomic) NSString *headerText;
 

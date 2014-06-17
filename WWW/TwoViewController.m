@@ -28,6 +28,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        //隐藏tabbar
+//        self.hidesBottomBarWhenPushed = YES;
     }
     return self;
 }
@@ -35,8 +37,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     keyBoardIsOpen = NO;
     isEng = YES;
+    [self hideTabbarByChangeFrame:YES];
+
 
     [self setNavigationBar];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWasChanged:) name:UIKeyboardDidChangeFrameNotification object:nil];
@@ -66,6 +71,27 @@
 - (void)viewDidAppear:(BOOL)animated {
     if (_scrollView.contentSize.height  > _scrollView.frame.size.height) {
         [_scrollView setContentOffset:CGPointMake(_scrollView.contentOffset.x, _scrollView.contentSize.height - _scrollView.bounds.size.height ) animated:YES];
+    }
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [self hideTabbarByChangeFrame:NO];
+}
+
+- (void)hideTabbarByChangeFrame:(BOOL)hidden {
+    for (UIView *view in self.tabBarController.view.subviews) {
+        if ([view isKindOfClass:[UIImageView class]]) {
+            [UIView animateWithDuration:0.3 animations:^{
+                CGRect frame = view.frame;
+                if (hidden) {
+                    frame.origin.y = [[UIScreen mainScreen]bounds].size.height;
+                    [view setFrame:frame];
+                } else {
+                    frame.origin.y = [[UIScreen mainScreen]bounds].size.height - 49;
+                    [view setFrame:frame];
+                }
+            }];
+        }
     }
 }
 
@@ -213,21 +239,31 @@
 
 - (void)moveView:(NSInteger)length
 {
+    // 49为tabbar的高度
+    int tabbarHeight = 49;
+    if (self.tabBarController.tabBar.hidden) {
+        tabbarHeight = 0;
+    }
+
     if (length == -36) {
         isEng = NO;
     } else if (length == 36) {
         isEng = YES;
     } else if (length == 216) {
         isEng = YES;
+        length -= tabbarHeight;
         keyBoardIsOpen = NO;
     } else if (length == 252) {
         isEng = YES;
+        length -= tabbarHeight;
         keyBoardIsOpen = NO;
     } else if (length == -216) {
         isEng = YES;
+        length += tabbarHeight;
         keyBoardIsOpen = YES;
     } else if (length == -252) {
         isEng = NO;
+        length += tabbarHeight;
         keyBoardIsOpen = YES;
     }
     [UIView beginAnimations:nil context:nil];

@@ -32,6 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     [self setNavigationBar];
 
     openSections = [[NSMutableArray alloc]init];
@@ -50,6 +51,27 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [self hideTabbarByChangeFrame:NO];
+}
+
+- (void)hideTabbarByChangeFrame:(BOOL)hidden {
+    for (UIView *view in self.tabBarController.view.subviews) {
+        if ([view isKindOfClass:[UIImageView class]]) {
+            [UIView animateWithDuration:0.3 animations:^{
+                CGRect frame = view.frame;
+                if (hidden) {
+                    frame.origin.y = [[UIScreen mainScreen]bounds].size.height;
+                    [view setFrame:frame];
+                } else {
+                    frame.origin.y = [[UIScreen mainScreen]bounds].size.height - 49;
+                    [view setFrame:frame];
+                }
+            }];
+        }
+    }
 }
 
 #pragma mark - navigationBar
@@ -211,7 +233,6 @@
 {
     TwoViewController *two = [[TwoViewController alloc]initWithNibName:@"TwoViewController" bundle:nil];
     two.headerText = [NSString stringWithFormat:@"%@",[[cellArr objectAtIndex:[indexPath section]] objectAtIndex:[indexPath row]]];
-//    [self presentViewController:two animated:YES completion:nil];
     [self.navigationController pushViewController:two animated:YES];
     [two release];
 }

@@ -40,8 +40,6 @@
 
     keyBoardIsOpen = NO;
     isEng = YES;
-    [self hideTabbarByChangeFrame:YES];
-
 
     [self setNavigationBar];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWasChanged:) name:UIKeyboardDidChangeFrameNotification object:nil];
@@ -74,6 +72,8 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    [self hideTabbarByChangeFrame:YES];
+    
     if (_scrollView.contentSize.height  > _scrollView.frame.size.height) {
         [_scrollView setContentOffset:CGPointMake(_scrollView.contentOffset.x, _scrollView.contentSize.height - _scrollView.bounds.size.height ) animated:YES];
     }

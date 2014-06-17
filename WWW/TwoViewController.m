@@ -66,6 +66,11 @@
             [self sendMessage:NO text:[NSString stringWithFormat:@"%@",[info objectForKey:@"ATTRIBUTION"]] image:nil];
         }
     }
+
+    //点击scrollview隐藏键盘
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(inputExit:)];
+    recognizer.delegate = self;
+    [_scrollView addGestureRecognizer:recognizer];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -164,8 +169,6 @@
 //    }
 
     [self sendMessage:YES text:nil image:image];
-
-//    NSDate *date = [NSDate date];
 
     [BusinessUtil saveImageToBox:[BusinessUtil scaleImageWithImageSimple:image scaledToSize:CGSizeMake(100,image.size.height*100/image.size.width)] WithName:[NSString stringWithFormat:@"www-%@.png",[NSDate date]]];
 

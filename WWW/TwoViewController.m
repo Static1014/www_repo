@@ -46,6 +46,7 @@
 
     [self setNavigationBar];
     _textView.text = @"";
+    [_textView.layer setCornerRadius:10];
     _textView.delegate = self;
     _btnSend.enabled = NO;
     [self initScrollView];

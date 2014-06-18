@@ -10,8 +10,8 @@
                 <outlet property="bottomView" destination="YJe-Zn-M3c" id="t6e-tN-2XR"/>
                 <outlet property="btnAdd" destination="VFX-1D-72x" id="R5J-zH-LOj"/>
                 <outlet property="btnSend" destination="o6K-rx-Smv" id="mWo-3C-wpb"/>
-                <outlet property="editView" destination="RiI-LB-a2D" id="8cS-rO-VdD"/>
                 <outlet property="scrollView" destination="utr-Yl-1AH" id="nyK-Vz-RSP"/>
+                <outlet property="textView" destination="yWV-fl-e4B" id="MFw-Wv-NT3"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -30,8 +30,8 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VFX-1D-72x">
-                            <rect key="frame" x="5" y="8" width="29" height="29"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <rect key="frame" x="8" y="8" width="29" height="29"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                             <state key="normal" title="+">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -40,21 +40,10 @@
                                 <action selector="clickAdd:" destination="-1" eventType="touchUpInside" id="Uo3-72-aOJ"/>
                             </connections>
                         </button>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" background="section_bg.png" id="RiI-LB-a2D">
-                            <rect key="frame" x="38" y="10" width="231" height="30"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                            <connections>
-                                <action selector="inputBegin:" destination="-1" eventType="editingDidBegin" id="XQA-SN-Ltc"/>
-                                <action selector="inputChange:" destination="-1" eventType="editingChanged" id="YtI-wj-r93"/>
-                                <action selector="inputEnd:" destination="-1" eventType="editingDidEnd" id="dzp-Qw-i43"/>
-                                <action selector="inputExit:" destination="-1" eventType="editingDidEndOnExit" id="ukE-cD-0Ci"/>
-                            </connections>
-                        </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o6K-rx-Smv">
-                            <rect key="frame" x="277" y="10" width="36" height="30"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <rect key="frame" x="279" y="10" width="36" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <state key="normal" title="Send">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -62,6 +51,18 @@
                                 <action selector="clickSend:" destination="-1" eventType="touchUpInside" id="EUu-1R-G5Q"/>
                             </connections>
                         </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="section_bg.png" id="DFf-2o-ggs">
+                            <rect key="frame" x="41" y="5" width="238" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yWV-fl-e4B">
+                            <rect key="frame" x="47" y="9" width="226" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

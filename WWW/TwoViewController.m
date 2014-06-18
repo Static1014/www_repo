@@ -28,7 +28,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        //隐藏tabbar
+        //隐藏系统tabbar
 //        self.hidesBottomBarWhenPushed = YES;
     }
     return self;
@@ -38,14 +38,16 @@
 {
     [super viewDidLoad];
 
+    // 输入法改变监听
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWasChanged:) name:UIKeyboardDidChangeFrameNotification object:nil];
+
     keyBoardIsOpen = NO;
     isEng = YES;
 
     [self setNavigationBar];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWasChanged:) name:UIKeyboardDidChangeFrameNotification object:nil];
-
+    _textView.text = @"";
+    _textView.delegate = self;
     _btnSend.enabled = NO;
-
     [self initScrollView];
 
 //    测试捕获异常
@@ -59,11 +61,18 @@
     NSArray *infos = [[DBCommon shared]selectDB:@"USER_INFO" condition:condition];
     [condition release];
 
-    if ([infos count] > 0) {
+    if ([infos count] > 0 && [infos count] <= 10) {
         for (NSDictionary *info in infos) {
             [self sendMessage:NO text:[NSString stringWithFormat:@"%@",[info objectForKey:@"ATTRIBUTION"]] image:nil];
         }
+    } else if ([infos count] > 10) {
+        // 刚进页面时，只加载最新的10条信息
+        for (int i = infos.count - 10; i < infos.count; i++) {
+            NSDictionary *info = [infos objectAtIndex:i];
+            [self sendMessage:NO text:[NSString stringWithFormat:@"%@",[info objectForKey:@"ATTRIBUTION"]] image:nil];
+        }
     }
+    [self scrollToBottom];
 
     //点击scrollview隐藏键盘
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(inputExit:)];
@@ -73,7 +82,10 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [self hideTabbarByChangeFrame:YES];
-    
+    [self scrollToBottom];
+}
+
+- (void)scrollToBottom {
     if (_scrollView.contentSize.height  > _scrollView.frame.size.height) {
         [_scrollView setContentOffset:CGPointMake(_scrollView.contentOffset.x, _scrollView.contentSize.height - _scrollView.bounds.size.height ) animated:YES];
     }
@@ -84,20 +96,40 @@
 }
 
 - (void)hideTabbarByChangeFrame:(BOOL)hidden {
-    for (UIView *view in self.tabBarController.view.subviews) {
-        if ([view isKindOfClass:[UIImageView class]]) {
-            [UIView animateWithDuration:0.3 animations:^{
-                CGRect frame = view.frame;
-                if (hidden) {
-                    frame.origin.y = [[UIScreen mainScreen]bounds].size.height;
-                    [view setFrame:frame];
-                } else {
-                    frame.origin.y = [[UIScreen mainScreen]bounds].size.height - 49;
-                    [view setFrame:frame];
-                }
-            }];
+    NSArray *views = self.tabBarController.view.subviews;
+    [UIView animateWithDuration:0.25 animations:^{
+        if (hidden) {
+            UIView *view1 = [views objectAtIndex:0];
+            CGRect frame = view1.frame;
+            frame.size.height = [[UIScreen mainScreen]bounds].size.height;
+            view1.frame = frame;
+
+            UIView *view2 = [views objectAtIndex:1];
+            frame = view2.frame;
+            frame.origin.y = [[UIScreen mainScreen]bounds].size.height;
+            view2.frame = frame;
+
+            UIView *view3 = [views objectAtIndex:2];
+            frame = view3.frame;
+            frame.origin.y = [[UIScreen mainScreen]bounds].size.height;
+            view3.frame = frame;
+        } else {
+            UIView *view1 = [views objectAtIndex:0];
+            CGRect frame = view1.frame;
+            frame.size.height = [[UIScreen mainScreen]bounds].size.height - 49;
+            view1.frame = frame;
+
+            UIView *view2 = [views objectAtIndex:1];
+            frame = view2.frame;
+            frame.origin.y = [[UIScreen mainScreen]bounds].size.height - 49;
+            view2.frame = frame;
+
+            UIView *view3 = [views objectAtIndex:2];
+            frame = view3.frame;
+            frame.origin.y = [[UIScreen mainScreen]bounds].size.height - 49;
+            view3.frame = frame;
         }
-    }
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -108,9 +140,9 @@
 - (void)dealloc {
     [_scrollView release];
     [_btnAdd release];
-    [_editView release];
     [_btnSend release];
     [_bottomView release];
+    [_textView release];
     [super dealloc];
 }
 
@@ -125,13 +157,13 @@
     UILabel *title = [[UILabel alloc]initWithFrame:CGRectMake(60, 20, 200, 44)];
     [title setText:_headerText];
     [title setTextColor:[UIColor blueColor]];
+    title.backgroundColor = [UIColor clearColor];
     title.textAlignment = NSTextAlignmentCenter;
     self.navigationItem.titleView = title;
     [title release];
 }
 
 - (void)clickLeftBack:(UIBarButtonItem*)sender {
-    [_editView resignFirstResponder];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -148,7 +180,7 @@
 
 #pragma mark - add photo
 - (IBAction)clickAdd:(id)sender {
-    [_editView resignFirstResponder];
+    [_textView resignFirstResponder];
 
     [self pickImageFromCamera:NO];
 }
@@ -179,11 +211,9 @@
 
 #pragma mark - Send Message
 - (IBAction)clickSend:(id)sender {
-    [_editView resignFirstResponder];
-
-    [DBUtil insertUserInfo:_headerText :_editView.text :_editView.text :_editView.text];
-    
-    [self sendMessage:NO text:_editView.text image:nil];
+    [_textView resignFirstResponder];
+    [DBUtil insertUserInfo:_headerText :_textView.text :_textView.text :_textView.text];
+    [self sendMessage:NO text:_textView.text image:nil];
 }
 
 - (void)sendMessage:(BOOL)msgIsImage text:(NSString*)msg image:(UIImage*)image {
@@ -199,7 +229,7 @@
     if ([_scrollView.subviews count]%2 == 1) {
         [cell turnToRight];
     }
-    _editView.text = @"";
+    _textView.text = @"";
     _btnSend.enabled = NO;
 
     [cell setFrame:CGRectMake(cell.frame.origin.x, _scrollView.contentSize.height, cell.frame.size.width, cell.frame.size.height)];
@@ -210,27 +240,17 @@
     CGSize size = _scrollView.contentSize;
     size.height += cell.frame.size.height;
     [_scrollView setContentSize:size];
-    
-    if (_scrollView.contentSize.height + cell.frame.size.height > _scrollView.frame.size.height) {
-        [_scrollView setContentOffset:CGPointMake(_scrollView.contentOffset.x, _scrollView.contentSize.height - _scrollView.bounds.size.height +cell.frame.size.height) animated:YES];
-    }
+
+    [self scrollToBottom];
 }
 
-- (IBAction)inputChange:(id)sender {
-    if ([_editView.text isEqualToString:@""]) {
-        _btnSend.enabled = NO;
-    } else {
-        _btnSend.enabled = YES;
-    }
+#pragma mark - textview delegate
+- (void)textViewDidBeginEditing:(UITextView *)textView {
+    [self moveView:-216];
 }
 
-- (IBAction)inputExit:(id)sender {
-    [_editView resignFirstResponder];
-}
-
-- (IBAction)inputEnd:(id)sender {
-    [_editView resignFirstResponder];
-
+- (void)textViewDidEndEditing:(UITextView *)textView {
+    [_textView resignFirstResponder];
     if (isEng) {
         [self moveView:216];
     } else {
@@ -238,8 +258,22 @@
     }
 }
 
-- (IBAction)inputBegin:(id)sender {
-    [self moveView:-216];
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView {
+    [_textView scrollRangeToVisible:NSMakeRange(_textView.text.length, 0)];
+    return YES;
+}
+
+- (void)textViewDidChange:(UITextView *)textView {
+    if ([_textView.text isEqualToString:@""]) {
+        _btnSend.enabled = NO;
+    } else {
+        _btnSend.enabled = YES;
+    }
+    [_textView scrollRangeToVisible:NSMakeRange(_textView.text.length, 0)];
+}
+
+- (IBAction)inputExit:(id)sender {
+    [_textView resignFirstResponder];
 }
 
 - (void)moveView:(NSInteger)length
@@ -272,7 +306,7 @@
         keyBoardIsOpen = YES;
     }
 
-    [UIView animateWithDuration:0.2 animations:^{
+    [UIView animateWithDuration:0.25 animations:^{
         CGRect scrollViewFrame = _scrollView.frame;
         scrollViewFrame.size.height += length;
         _scrollView.frame = scrollViewFrame;
@@ -281,6 +315,10 @@
         bottomViewFrame.origin.y += length;
         _bottomView.frame = bottomViewFrame;
     }];
+
+    if (length < -200) {
+        [self scrollToBottom];
+    }
 }
 
 - (void)keyboardWasChanged:(NSNotification*)notification
@@ -293,10 +331,6 @@
     } else if (keyBoardIsOpen && isEng && afterHeight == 252) {
         [self moveView:-36];
     }
-}
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    [_editView resignFirstResponder];
 }
 
 @end

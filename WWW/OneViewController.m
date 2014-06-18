@@ -58,20 +58,40 @@
 }
 
 - (void)hideTabbarByChangeFrame:(BOOL)hidden {
-    for (UIView *view in self.tabBarController.view.subviews) {
-        if ([view isKindOfClass:[UIImageView class]]) {
-            [UIView animateWithDuration:0.3 animations:^{
-                CGRect frame = view.frame;
-                if (hidden) {
-                    frame.origin.y = [[UIScreen mainScreen]bounds].size.height;
-                    [view setFrame:frame];
-                } else {
-                    frame.origin.y = [[UIScreen mainScreen]bounds].size.height - 49;
-                    [view setFrame:frame];
-                }
-            }];
+    NSArray *views = self.tabBarController.view.subviews;
+    [UIView animateWithDuration:0.25 animations:^{
+        if (hidden) {
+            UIView *view1 = [views objectAtIndex:0];
+            CGRect frame = view1.frame;
+            frame.size.height = [[UIScreen mainScreen]bounds].size.height;
+            view1.frame = frame;
+
+            UIView *view2 = [views objectAtIndex:1];
+            frame = view2.frame;
+            frame.origin.y = [[UIScreen mainScreen]bounds].size.height;
+            view2.frame = frame;
+
+            UIView *view3 = [views objectAtIndex:2];
+            frame = view3.frame;
+            frame.origin.y = [[UIScreen mainScreen]bounds].size.height;
+            view3.frame = frame;
+        } else {
+            UIView *view1 = [views objectAtIndex:0];
+            CGRect frame = view1.frame;
+            frame.size.height = [[UIScreen mainScreen]bounds].size.height - 49;
+            view1.frame = frame;
+
+            UIView *view2 = [views objectAtIndex:1];
+            frame = view2.frame;
+            frame.origin.y = [[UIScreen mainScreen]bounds].size.height - 49;
+            view2.frame = frame;
+
+            UIView *view3 = [views objectAtIndex:2];
+            frame = view3.frame;
+            frame.origin.y = [[UIScreen mainScreen]bounds].size.height - 49;
+            view3.frame = frame;
         }
-    }
+    }];
 }
 
 #pragma mark - navigationBar
@@ -85,6 +105,7 @@
     UILabel *title = [[UILabel alloc]initWithFrame:CGRectMake(60, 20, 200, 44)];
     [title setText:@"View One"];
     [title setTextColor:[UIColor blueColor]];
+    title.backgroundColor = [UIColor clearColor];
     title.textAlignment = NSTextAlignmentCenter;
     self.navigationItem.titleView = title;
     [title release];

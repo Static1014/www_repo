@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TwoViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIGestureRecognizerDelegate>
+@interface TwoViewController : UIViewController <UITextViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIGestureRecognizerDelegate>
 
 @property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (retain, nonatomic) IBOutlet UITextField *editView;
+@property (retain, nonatomic) IBOutlet UITextView *textView;
 @property (retain, nonatomic) IBOutlet UIButton *btnAdd;
 @property (retain, nonatomic) IBOutlet UIButton *btnSend;
 @property (retain, nonatomic) IBOutlet UIView *bottomView;
@@ -21,7 +21,4 @@
 - (IBAction)clickSend:(id)sender;
 - (IBAction)clickAdd:(id)sender;
 - (IBAction)inputExit:(id)sender;
-- (IBAction)inputBegin:(id)sender;
-- (IBAction)inputEnd:(id)sender;
-- (IBAction)inputChange:(id)sender;
 @end

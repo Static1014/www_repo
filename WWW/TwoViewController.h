@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol showOneMsgDelegate
+@optional
+- (void)showOneMsg:(BOOL)hidden withNum:(int)num;
+@end
 
 @interface TwoViewController : UIViewController <UITextViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIGestureRecognizerDelegate>
+
+@property (retain, nonatomic) id<showOneMsgDelegate> delegate;
 
 @property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (retain, nonatomic) IBOutlet UITextView *textView;

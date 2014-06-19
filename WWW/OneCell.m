@@ -113,7 +113,10 @@
     frame.size.width += 20;
     frame.size.height += 4;
     [_lableBg setFrame:frame];
-    [_lableBg setImage:textBg];
+    [_lableBg setBackgroundColor:[UIColor colorWithWhite:1.0 alpha:1.0]];
+//    [_lableBg setImage:textBg];
+    //    _lableBg.hidden = YES;
+    [_lableBg.layer setCornerRadius:10];
 }
 
 - (void)turnToRight
@@ -128,6 +131,7 @@
     } else {
         frame = _lable.frame;
         [_lable setFrame:CGRectMake(_lableBg.frame.origin.x + 10, frame.origin.y, frame.size.width, frame.size.height)];
+        [_lableBg setBackgroundColor:[UIColor colorWithWhite:1.0 alpha:0.8]];
     }
 }
 

@@ -179,8 +179,8 @@
 			children = (
 				B37CF361195018070064EA15 /* MyTabBarController.h */,
 				B37CF362195018070064EA15 /* MyTabBarController.m */,
-				B3E87E6C19357938006F8DF4 /* AppDelegate.m */,
 				B3E87E6B19357938006F8DF4 /* AppDelegate.h */,
+				B3E87E6C19357938006F8DF4 /* AppDelegate.m */,
 			);
 			name = TabBar;
 			sourceTree = "<group>";
@@ -532,7 +532,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos7.1;
 			};
 			name = Debug;
 		};
@@ -567,7 +567,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos7.1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

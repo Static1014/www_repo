@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TwoViewController.h"
+
+//@protocol showOneMsgDelegate
+//@optional
+//- (void)showOneMsg:(BOOL)hidden withNum:(int)num;
+//@end
 
 @interface OneViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (retain, nonatomic) id<showOneMsgDelegate> delegate;
 
 @property (retain, nonatomic) IBOutlet UITableView *tableView;
 @end

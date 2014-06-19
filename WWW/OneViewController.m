@@ -8,7 +8,6 @@
 
 #import "OneViewController.h"
 #import "OneCell.h"
-#import "TwoViewController.h"
 
 @interface OneViewController ()
 {
@@ -53,13 +52,13 @@
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
-- (void)viewDidAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
     [self hideTabbarByChangeFrame:NO];
 }
 
 - (void)hideTabbarByChangeFrame:(BOOL)hidden {
     NSArray *views = self.tabBarController.view.subviews;
-    [UIView animateWithDuration:0.25 animations:^{
+    [UIView animateWithDuration:0.2 animations:^{
         if (hidden) {
             UIView *view1 = [views objectAtIndex:0];
             CGRect frame = view1.frame;
@@ -109,6 +108,8 @@
     title.textAlignment = NSTextAlignmentCenter;
     self.navigationItem.titleView = title;
     [title release];
+
+//    NSLog(@"%@",[self.navigationController.navigationBar.subviews description]);
 }
 
 - (void)clickLeftAdd:(UIBarButtonItem*)sender {
@@ -241,6 +242,8 @@
 
 - (void)clickImageAtIndexPath:(UIButton*)sender {
     NSLog(@"image ----click---%d-----%d",sender.tag/10000,sender.tag%10000);
+
+//    [self.delegate showOneMsg:NO withNum:9];
 }
 
 - (void)cellLongPress:(UIGestureRecognizer*)recognizer {
@@ -248,11 +251,14 @@
         OneCell *cell = (OneCell*)recognizer.view;
         NSLog(@"cell long click---%d-----%d",[cell.indexPath section],[cell.indexPath row]);
     }
+//    [self.delegate showOneMsg:YES withNum:-1];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TwoViewController *two = [[TwoViewController alloc]initWithNibName:@"TwoViewController" bundle:nil];
+    // delegate传递
+    two.delegate = _delegate;
     two.headerText = [NSString stringWithFormat:@"%@",[[cellArr objectAtIndex:[indexPath section]] objectAtIndex:[indexPath row]]];
     [self.navigationController pushViewController:two animated:YES];
     [two release];

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OneViewController.h"
+#import "TwoViewController.h"
+#import "ThreeViewController.h"
+#import "FourViewController.h"
+#import "FiveViewController.h"
 
-@interface MyTabBarController : UITabBarController
+@interface MyTabBarController : UITabBarController <showOneMsgDelegate>
 
 @end

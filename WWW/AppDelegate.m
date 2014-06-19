@@ -20,6 +20,7 @@
 
     MyTabBarController *myTabBar = [[MyTabBarController alloc]initWithNibName:@"" bundle:nil];
     self.window.rootViewController = myTabBar;
+    self.window.backgroundColor = [UIColor whiteColor];
     [myTabBar release];
 
     [self.window makeKeyAndVisible];

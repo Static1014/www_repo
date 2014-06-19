@@ -49,6 +49,9 @@
     [_textView.layer setCornerRadius:10];
     _textView.delegate = self;
     _btnSend.enabled = NO;
+    [_btnSend setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+    [_btnSend setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
+    [_btnAdd setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
     [self initScrollView];
 
 //    测试捕获异常
@@ -82,8 +85,12 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    [self hideTabbarByChangeFrame:YES];
     [self scrollToBottom];
+    [self.delegate showOneMsg:NO withNum:9];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self hideTabbarByChangeFrame:YES];
 }
 
 - (void)scrollToBottom {
@@ -92,13 +99,9 @@
     }
 }
 
-- (void)viewDidDisappear:(BOOL)animated {
-    [self hideTabbarByChangeFrame:NO];
-}
-
 - (void)hideTabbarByChangeFrame:(BOOL)hidden {
     NSArray *views = self.tabBarController.view.subviews;
-    [UIView animateWithDuration:0.25 animations:^{
+    [UIView animateWithDuration:0.2 animations:^{
         if (hidden) {
             UIView *view1 = [views objectAtIndex:0];
             CGRect frame = view1.frame;
@@ -162,6 +165,10 @@
     title.textAlignment = NSTextAlignmentCenter;
     self.navigationItem.titleView = title;
     [title release];
+
+//    NSLog(@"-----%@",NSStringFromCGRect(self.navigationItem.titleView.frame));
+//
+//    NSLog(@"%@",[self.navigationController.navigationBar.subviews description]);
 }
 
 - (void)clickLeftBack:(UIBarButtonItem*)sender {
@@ -177,6 +184,7 @@
         size.height = 0;
         [_scrollView setContentSize:size];
     }
+    [self.delegate showOneMsg:YES withNum:-1];
 }
 
 #pragma mark - add photo

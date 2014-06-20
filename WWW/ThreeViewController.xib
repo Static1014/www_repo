@@ -9,7 +9,6 @@
             <connections>
                 <outlet property="btnCancel" destination="18R-vD-NGh" id="mTw-Fb-gWL"/>
                 <outlet property="collectionView" destination="ncN-a3-l6Y" id="Lz6-KE-5f5"/>
-                <outlet property="pageControl" destination="Zdb-wM-BaP" id="8Hq-ls-z6e"/>
                 <outlet property="searchBar" destination="cgu-IE-bgZ" id="1zt-q4-cYL"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -31,10 +30,10 @@
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" id="ncN-a3-l6Y">
-                    <rect key="frame" x="30" y="110" width="260" height="437"/>
+                    <rect key="frame" x="30" y="111" width="260" height="437"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4x7-4w-GZY">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pO7-Rk-igH">
                         <size key="itemSize" width="80" height="100"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -42,9 +41,6 @@
                     </collectionViewFlowLayout>
                     <cells/>
                 </collectionView>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="Zdb-wM-BaP">
-                    <rect key="frame" x="141" y="511" width="39" height="37"/>
-                </pageControl>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="18R-vD-NGh">
                     <rect key="frame" x="320" y="53" width="48" height="30"/>
                     <state key="normal" title="Cancel">

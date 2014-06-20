@@ -32,6 +32,8 @@
 		B3DCDAA8193EE9C200BAD04B /* DBCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DCDAA7193EE9C200BAD04B /* DBCommon.m */; };
 		B3DCDAAA193EF8D000BAD04B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DCDAA9193EF8D000BAD04B /* libsqlite3.dylib */; };
 		B3DCDAAF193F0E6D00BAD04B /* DBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DCDAAE193F0E6D00BAD04B /* DBUtil.m */; };
+		B3E18BCA195429D200141B00 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E18BC9195429D100141B00 /* MyCell.m */; };
+		B3E18BCC195429F200141B00 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E18BCB195429F200141B00 /* MyCell.xib */; };
 		B3E32992194004B20041817A /* w.db in Resources */ = {isa = PBXBuildFile; fileRef = B3E32991194004B20041817A /* w.db */; };
 		B3E32995194055470041817A /* BusinessUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E32994194055470041817A /* BusinessUtil.m */; };
 		B3E87E5D19357938006F8DF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E87E5C19357938006F8DF4 /* Foundation.framework */; };
@@ -152,8 +154,6 @@
 		B3FEFC291952C70D0032003D /* vote_yes.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FEFBC11952C70D0032003D /* vote_yes.png */; };
 		B3FEFC2A1952C70D0032003D /* wizard.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FEFBC21952C70D0032003D /* wizard.png */; };
 		B3FEFC2B1952C70D0032003D /* 懒人图库.url in Resources */ = {isa = PBXBuildFile; fileRef = B3FEFBC31952C70D0032003D /* 懒人图库.url */; };
-		B3FEFC2E195401040032003D /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFC2D195401040032003D /* MyCollectionViewCell.m */; };
-		B3FEFC3019540B4A0032003D /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3FEFC2F19540B490032003D /* MyCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +201,9 @@
 		B3DCDAA9193EF8D000BAD04B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		B3DCDAAD193F0E6D00BAD04B /* DBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBUtil.h; sourceTree = "<group>"; };
 		B3DCDAAE193F0E6D00BAD04B /* DBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBUtil.m; sourceTree = "<group>"; };
+		B3E18BC8195429D100141B00 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		B3E18BC9195429D100141B00 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		B3E18BCB195429F200141B00 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 		B3E32991194004B20041817A /* w.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = w.db; sourceTree = "<group>"; };
 		B3E32993194055470041817A /* BusinessUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessUtil.h; sourceTree = "<group>"; };
 		B3E32994194055470041817A /* BusinessUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessUtil.m; sourceTree = "<group>"; };
@@ -327,9 +330,6 @@
 		B3FEFBC11952C70D0032003D /* vote_yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vote_yes.png; sourceTree = "<group>"; };
 		B3FEFBC21952C70D0032003D /* wizard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wizard.png; sourceTree = "<group>"; };
 		B3FEFBC31952C70D0032003D /* 懒人图库.url */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "懒人图库.url"; sourceTree = "<group>"; };
-		B3FEFC2C195401030032003D /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
-		B3FEFC2D195401040032003D /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
-		B3FEFC2F19540B490032003D /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,9 +384,7 @@
 				B37CF35B194EEA9D0064EA15 /* ThreeViewController.h */,
 				B37CF35C194EEA9D0064EA15 /* ThreeViewController.m */,
 				B37CF35D194EEA9D0064EA15 /* ThreeViewController.xib */,
-				B3FEFC2C195401030032003D /* MyCollectionViewCell.h */,
-				B3FEFC2D195401040032003D /* MyCollectionViewCell.m */,
-				B3FEFC2F19540B490032003D /* MyCollectionViewCell.xib */,
+				B3E18BC7195429A200141B00 /* CollectionCell */,
 			);
 			name = Three;
 			sourceTree = "<group>";
@@ -452,6 +450,16 @@
 				B3AA41A9194A867700579A3D /* MyUncaughtExceptionHandler.m */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		B3E18BC7195429A200141B00 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				B3E18BC8195429D100141B00 /* MyCell.h */,
+				B3E18BC9195429D100141B00 /* MyCell.m */,
+				B3E18BCB195429F200141B00 /* MyCell.xib */,
+			);
+			name = CollectionCell;
 			sourceTree = "<group>";
 		};
 		B3E87E5019357937006F8DF4 = {
@@ -751,7 +759,6 @@
 				B3FEFC131952C70D0032003D /* shopping_cart.png in Resources */,
 				B310E0ED1938702A00A660A2 /* section_bg.png in Resources */,
 				B3FEFC021952C70D0032003D /* pie-chart_graph.png in Resources */,
-				B3FEFC3019540B4A0032003D /* MyCollectionViewCell.xib in Resources */,
 				B3FEFBC41952C70D0032003D /* arrow_down.png in Resources */,
 				B3FEFBEE1952C70D0032003D /* help.png in Resources */,
 				B3FEFC2B1952C70D0032003D /* 懒人图库.url in Resources */,
@@ -797,6 +804,7 @@
 				B3FEFBF61952C70D0032003D /* mobile_phone.png in Resources */,
 				B3FEFBD11952C70D0032003D /* bug.png in Resources */,
 				B3FEFC0F1952C70D0032003D /* save_diskette_floppy_disk.png in Resources */,
+				B3E18BCC195429F200141B00 /* MyCell.xib in Resources */,
 				B3FEFBFF1952C70D0032003D /* pause.png in Resources */,
 				B3FEFBF41952C70D0032003D /* lock.png in Resources */,
 				B37CF37619501A000064EA15 /* tab_2.png in Resources */,
@@ -883,7 +891,7 @@
 				B310E0E619382B6100A660A2 /* OneCell.m in Sources */,
 				B37CF37D19501E6F0064EA15 /* FourViewController.m in Sources */,
 				B310E0F21938816000A660A2 /* TwoViewController.m in Sources */,
-				B3FEFC2E195401040032003D /* MyCollectionViewCell.m in Sources */,
+				B3E18BCA195429D200141B00 /* MyCell.m in Sources */,
 				B3AA41AA194A867700579A3D /* MyUncaughtExceptionHandler.m in Sources */,
 				B3E87E6919357938006F8DF4 /* main.m in Sources */,
 				B37CF363195018070064EA15 /* MyTabBarController.m in Sources */,

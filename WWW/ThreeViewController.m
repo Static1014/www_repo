@@ -9,7 +9,7 @@
 #import "ThreeViewController.h"
 #import "FourViewController.h"
 #import "BusinessUtil.h"
-#import "MyCollectionViewCell.h"
+#import "MyCell.h"
 
 @interface ThreeViewController () {
     UIProgressView *progress;
@@ -40,8 +40,6 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [BusinessUtil hideTabbarByChangeFrame:NO withTabBarView:self.tabBarController.view];
-//    NSLog(@"%@",[self.tabBarController.view.subviews description]);
-//    NSLog(@"%@",[self.view.subviews description]);
 }
 
 - (void)setNavigationBar {
@@ -181,11 +179,11 @@
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
 
-    [_collectionView registerClass:[MyCollectionViewCell class] forCellWithReuseIdentifier:@"MyCollectionViewCell"];
+    [_collectionView registerClass:[MyCell class] forCellWithReuseIdentifier:@"MyCell"];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 8;
+    return 10;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -193,35 +191,36 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellIndentifier = @"MyCollectionViewCell";
+    static NSString *cellIndentifier = @"MyCell";
 
-    MyCollectionViewCell *cell = [_collectionView dequeueReusableCellWithReuseIdentifier:cellIndentifier forIndexPath:indexPath];
+    MyCell *cell = [_collectionView dequeueReusableCellWithReuseIdentifier:cellIndentifier forIndexPath:indexPath];
 
-//    if (cell == nil) {
-//        cell = [[[MyCollectionViewCell alloc]initWithFrame:CGRectMake(0, 0, 80, 100)] autorelease];
-//    }
+    cell.backgroundColor = [UIColor colorWithRed:((10 * indexPath.row) / 255.0) green:((20 * indexPath.row)/255.0) blue:((30 * indexPath.row)/255.0) alpha:1.0f];
 
-//    cell.backgroundColor = [UIColor colorWithRed:((10 * indexPath.row) / 255.0) green:((20 * indexPath.row)/255.0) blue:((30 * indexPath.row)/255.0) alpha:1.0f];
-
-    [cell setCellText:[NSString stringWithFormat:@"%d - %d",[indexPath section],[indexPath row]]];
-
-    NSLog(@"%@",cell.lable);
+    cell.bg.backgroundColor = [UIColor colorWithRed:((10 * indexPath.row) / 255.0) green:((20 * indexPath.row)/255.0) blue:((30 * indexPath.row)/255.0) alpha:1.0f];
+    [cell.image setImage:[UIImage imageNamed:@"item.png"]];
+    [cell.lable setText:[NSString stringWithFormat:@"%d - %d",[indexPath section],[indexPath row]]];
 
     return cell;
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    MyCollectionViewCell * cell = (MyCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-//    cell.backgroundColor = [UIColor whiteColor];
-//    [cell setCellImage:[UIImage imageNamed:@"item.png"]];
+    MyCell * cell = (MyCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    // 取消选中
+    if (cell.bg.backgroundColor == [UIColor orangeColor]) {
+        cell.bg.backgroundColor = [UIColor colorWithRed:((10 * indexPath.row) / 255.0) green:((20 * indexPath.row)/255.0) blue:((30 * indexPath.row)/255.0) alpha:1.0f];
+    } else {
+        cell.bg.backgroundColor = [UIColor orangeColor];
+    }
 }
 
-
+// 单选，不重写该方法则多选
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
-//    MyCollectionViewCell * cell = (MyCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-//    cell.backgroundColor = [UIColor colorWithRed:((10 * indexPath.row) / 255.0) green:((20 * indexPath.row)/255.0) blue:((30 * indexPath.row)/255.0) alpha:1.0f];
+    MyCell * cell = (MyCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    cell.bg.backgroundColor = [UIColor colorWithRed:((10 * indexPath.row) / 255.0) green:((20 * indexPath.row)/255.0) blue:((30 * indexPath.row)/255.0) alpha:1.0f];
 }
+
 #pragma mark - PageControl
 
 
@@ -234,7 +233,6 @@
 - (void)dealloc {
     [_searchBar release];
     [_collectionView release];
-    [_pageControl release];
     [_btnCancel release];
     [super dealloc];
 }

@@ -32,15 +32,15 @@
     [super viewDidLoad];
 
     self.tabBar.hidden = YES;
-    defaultTab = 1;
+    defaultTab = 0;
 
     [self setMyViewControllers];
     [self initMyTabBarItems];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    self.selectedIndex = defaultTab;
-}
+//- (void)viewDidAppear:(BOOL)animated {
+//    self.selectedIndex = defaultTab;
+//}
 
 - (void)initMyTabBarItems {
     bgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 431, 320, 49)];

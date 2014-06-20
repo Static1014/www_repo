@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ThreeViewController : UIViewController
+@interface ThreeViewController : UIViewController <UISearchBarDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
+@property (retain, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (retain, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (retain, nonatomic) IBOutlet UIPageControl *pageControl;
+- (IBAction)clickCancelBtn:(id)sender;
+@property (retain, nonatomic) IBOutlet UIButton *btnCancel;
 @end

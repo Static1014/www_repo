@@ -152,6 +152,8 @@
 		B3FEFC291952C70D0032003D /* vote_yes.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FEFBC11952C70D0032003D /* vote_yes.png */; };
 		B3FEFC2A1952C70D0032003D /* wizard.png in Resources */ = {isa = PBXBuildFile; fileRef = B3FEFBC21952C70D0032003D /* wizard.png */; };
 		B3FEFC2B1952C70D0032003D /* 懒人图库.url in Resources */ = {isa = PBXBuildFile; fileRef = B3FEFBC31952C70D0032003D /* 懒人图库.url */; };
+		B3FEFC2E195401040032003D /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFC2D195401040032003D /* MyCollectionViewCell.m */; };
+		B3FEFC3019540B4A0032003D /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3FEFC2F19540B490032003D /* MyCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -325,6 +327,9 @@
 		B3FEFBC11952C70D0032003D /* vote_yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vote_yes.png; sourceTree = "<group>"; };
 		B3FEFBC21952C70D0032003D /* wizard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wizard.png; sourceTree = "<group>"; };
 		B3FEFBC31952C70D0032003D /* 懒人图库.url */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "懒人图库.url"; sourceTree = "<group>"; };
+		B3FEFC2C195401030032003D /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		B3FEFC2D195401040032003D /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		B3FEFC2F19540B490032003D /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,6 +384,9 @@
 				B37CF35B194EEA9D0064EA15 /* ThreeViewController.h */,
 				B37CF35C194EEA9D0064EA15 /* ThreeViewController.m */,
 				B37CF35D194EEA9D0064EA15 /* ThreeViewController.xib */,
+				B3FEFC2C195401030032003D /* MyCollectionViewCell.h */,
+				B3FEFC2D195401040032003D /* MyCollectionViewCell.m */,
+				B3FEFC2F19540B490032003D /* MyCollectionViewCell.xib */,
 			);
 			name = Three;
 			sourceTree = "<group>";
@@ -743,6 +751,7 @@
 				B3FEFC131952C70D0032003D /* shopping_cart.png in Resources */,
 				B310E0ED1938702A00A660A2 /* section_bg.png in Resources */,
 				B3FEFC021952C70D0032003D /* pie-chart_graph.png in Resources */,
+				B3FEFC3019540B4A0032003D /* MyCollectionViewCell.xib in Resources */,
 				B3FEFBC41952C70D0032003D /* arrow_down.png in Resources */,
 				B3FEFBEE1952C70D0032003D /* help.png in Resources */,
 				B3FEFC2B1952C70D0032003D /* 懒人图库.url in Resources */,
@@ -874,6 +883,7 @@
 				B310E0E619382B6100A660A2 /* OneCell.m in Sources */,
 				B37CF37D19501E6F0064EA15 /* FourViewController.m in Sources */,
 				B310E0F21938816000A660A2 /* TwoViewController.m in Sources */,
+				B3FEFC2E195401040032003D /* MyCollectionViewCell.m in Sources */,
 				B3AA41AA194A867700579A3D /* MyUncaughtExceptionHandler.m in Sources */,
 				B3E87E6919357938006F8DF4 /* main.m in Sources */,
 				B37CF363195018070064EA15 /* MyTabBarController.m in Sources */,

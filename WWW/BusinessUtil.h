@@ -16,4 +16,5 @@
 
 + (UIImage*)scaleImageWithImageSimple:(UIImage*)image scaledToSize:(CGSize)newSize;
 + (void)saveImageToBox:(UIImage*)image WithName:(NSString*)imageName;
++ (void)hideTabbarByChangeFrame:(BOOL)hidden withTabBarView:(UIView*)view;
 @end

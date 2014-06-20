@@ -90,50 +90,13 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self hideTabbarByChangeFrame:YES];
+    [BusinessUtil hideTabbarByChangeFrame:YES withTabBarView:self.tabBarController.view];
 }
 
 - (void)scrollToBottom {
     if (_scrollView.contentSize.height  > _scrollView.frame.size.height) {
         [_scrollView setContentOffset:CGPointMake(_scrollView.contentOffset.x, _scrollView.contentSize.height - _scrollView.bounds.size.height ) animated:YES];
     }
-}
-
-- (void)hideTabbarByChangeFrame:(BOOL)hidden {
-    NSArray *views = self.tabBarController.view.subviews;
-    [UIView animateWithDuration:0.2 animations:^{
-        if (hidden) {
-            UIView *view1 = [views objectAtIndex:0];
-            CGRect frame = view1.frame;
-            frame.size.height = [[UIScreen mainScreen]bounds].size.height;
-            view1.frame = frame;
-
-            UIView *view2 = [views objectAtIndex:1];
-            frame = view2.frame;
-            frame.origin.y = [[UIScreen mainScreen]bounds].size.height;
-            view2.frame = frame;
-
-            UIView *view3 = [views objectAtIndex:2];
-            frame = view3.frame;
-            frame.origin.y = [[UIScreen mainScreen]bounds].size.height;
-            view3.frame = frame;
-        } else {
-            UIView *view1 = [views objectAtIndex:0];
-            CGRect frame = view1.frame;
-            frame.size.height = [[UIScreen mainScreen]bounds].size.height - 49;
-            view1.frame = frame;
-
-            UIView *view2 = [views objectAtIndex:1];
-            frame = view2.frame;
-            frame.origin.y = [[UIScreen mainScreen]bounds].size.height - 49;
-            view2.frame = frame;
-
-            UIView *view3 = [views objectAtIndex:2];
-            frame = view3.frame;
-            frame.origin.y = [[UIScreen mainScreen]bounds].size.height - 49;
-            view3.frame = frame;
-        }
-    }];
 }
 
 - (void)didReceiveMemoryWarning

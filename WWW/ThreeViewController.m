@@ -8,6 +8,8 @@
 
 #import "ThreeViewController.h"
 #import "FourViewController.h"
+#import "BusinessUtil.h"
+#import "MyCollectionViewCell.h"
 
 @interface ThreeViewController () {
     UIProgressView *progress;
@@ -31,14 +33,15 @@
 
     [self setNavigationBar];
 
-    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(changeProgress) userInfo:nil repeats:YES];
+    [self initSearchBar];
+
+    [self initCollectionView];
 }
 
-- (void)changeProgress {
-    progress.progress += 0.02;
-    if (progress.progress >= 1) {
-        progress.progress = 0;
-    }
+- (void)viewWillAppear:(BOOL)animated {
+    [BusinessUtil hideTabbarByChangeFrame:NO withTabBarView:self.tabBarController.view];
+//    NSLog(@"%@",[self.tabBarController.view.subviews description]);
+//    NSLog(@"%@",[self.view.subviews description]);
 }
 
 - (void)setNavigationBar {
@@ -60,6 +63,7 @@
 
     [bgView addSubview:progress];
     [progress release];
+    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(changeProgress) userInfo:nil repeats:YES];
 
     self.navigationItem.titleView = bgView;
     [bgView release];
@@ -88,13 +92,16 @@
     self.navigationItem.rightBarButtonItems = rightItems;
     [r2 release];
     [r1 release];
+}
 
-//    NSLog(@"%@",[self.navigationController.navigationBar.subviews description]);
+- (void)changeProgress {
+    progress.progress += 0.02;
+    if (progress.progress >= 1) {
+        progress.progress = 0;
+    }
 }
 
 - (void)clickR2:(UIBarButtonItem*)btn {
-    NSLog(@"----------R2");
-
     FourViewController *four = [[FourViewController alloc]initWithNibName:@"FourViewController" bundle:nil];
     four.title = @"Four Page";
     [self.navigationController pushViewController:four animated:YES];
@@ -105,9 +112,130 @@
     NSLog(@"-----L2");
 }
 
+#pragma mark - SearchBar
+- (void)initSearchBar {
+    _searchBar.delegate = self;
+
+    [_btnCancel setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
+    _btnCancel.enabled = NO;
+
+    CGRect frame = [[UIScreen mainScreen]bounds];
+    UIControl *con = [[UIControl alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+    [con addTarget:self action:@selector(clickOthersCancelSearch) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:con];
+    [self.view sendSubviewToBack:con];
+}
+
+- (void)clickOthersCancelSearch {
+    [self hideCancelBtn:YES];
+}
+
+- (void)hideCancelBtn:(BOOL)hidden {
+    if (hidden) {
+        [_searchBar resignFirstResponder];
+    }
+    CGFloat length = 0;
+    if (hidden && _searchBar.frame.size.width == 260) {
+        length = 60;
+    } else if (!hidden && _searchBar.frame.size.width == 320) {
+        length = -60;
+    }
+    if (length != 0) {
+        [UIView animateWithDuration:0.25 animations:^{
+            CGRect frame = _searchBar.frame;
+            frame.size.width += length;
+            _searchBar.frame = frame;
+            frame = _btnCancel.frame;
+            frame.origin.x += length;
+            _btnCancel.frame = frame;
+        }];
+    }
+}
+
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
+    _btnCancel.enabled = YES;
+    [self hideCancelBtn:NO];
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+    if (![@"" isEqualToString:searchText]) {
+        _btnCancel.enabled = YES;
+        [self search:searchText];
+    }
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    [self search:_searchBar.text];
+    [self hideCancelBtn:YES];
+}
+
+- (IBAction)clickCancelBtn:(id)sender {
+    [self hideCancelBtn:YES];
+}
+
+- (void)search:(NSString*)text {
+    NSLog(@"--------search clcik------%@",text);
+}
+#pragma mark - CollectionView
+- (void)initCollectionView {
+    _collectionView.delegate = self;
+    _collectionView.dataSource = self;
+
+    [_collectionView registerClass:[MyCollectionViewCell class] forCellWithReuseIdentifier:@"MyCollectionViewCell"];
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 8;
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellIndentifier = @"MyCollectionViewCell";
+
+    MyCollectionViewCell *cell = [_collectionView dequeueReusableCellWithReuseIdentifier:cellIndentifier forIndexPath:indexPath];
+
+//    if (cell == nil) {
+//        cell = [[[MyCollectionViewCell alloc]initWithFrame:CGRectMake(0, 0, 80, 100)] autorelease];
+//    }
+
+//    cell.backgroundColor = [UIColor colorWithRed:((10 * indexPath.row) / 255.0) green:((20 * indexPath.row)/255.0) blue:((30 * indexPath.row)/255.0) alpha:1.0f];
+
+    [cell setCellText:[NSString stringWithFormat:@"%d - %d",[indexPath section],[indexPath row]]];
+
+    NSLog(@"%@",cell.lable);
+
+    return cell;
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+//    MyCollectionViewCell * cell = (MyCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+//    cell.backgroundColor = [UIColor whiteColor];
+//    [cell setCellImage:[UIImage imageNamed:@"item.png"]];
+}
+
+
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+//    MyCollectionViewCell * cell = (MyCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+//    cell.backgroundColor = [UIColor colorWithRed:((10 * indexPath.row) / 255.0) green:((20 * indexPath.row)/255.0) blue:((30 * indexPath.row)/255.0) alpha:1.0f];
+}
+#pragma mark - PageControl
+
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
 }
 
+- (void)dealloc {
+    [_searchBar release];
+    [_collectionView release];
+    [_pageControl release];
+    [_btnCancel release];
+    [super dealloc];
+}
 @end

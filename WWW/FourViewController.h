@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FourViewController : UIViewController
+@interface FourViewController : UIViewController<UIScrollViewDelegate>
 
+@property (retain, nonatomic) IBOutlet UIScrollView *pageScrollView;
+@property (retain, nonatomic) IBOutlet UIPageControl *pageControl;
+
+- (IBAction)pageValueChanged:(id)sender;
 @end

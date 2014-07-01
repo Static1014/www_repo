@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FiveViewController : UIViewController
+@interface FiveViewController : UIViewController <UIScrollViewDelegate>
+{
+    NSMutableArray *imageArray;//存放图片
+    NSTimer *myTimer;//定时器
 
+}
+@property(nonatomic,retain) IBOutlet UIScrollView *myScrollView;
+@property(nonatomic,retain) IBOutlet UIPageControl *pageControl;
+
+-(IBAction)pageTurn:(UIPageControl *)sender;
 @end

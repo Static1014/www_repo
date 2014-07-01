@@ -29,6 +29,10 @@
 		B37CF38319501EAE0064EA15 /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37CF38119501EAE0064EA15 /* FiveViewController.m */; };
 		B37CF38419501EAE0064EA15 /* FiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37CF38219501EAE0064EA15 /* FiveViewController.xib */; };
 		B3AA41AA194A867700579A3D /* MyUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA41A9194A867700579A3D /* MyUncaughtExceptionHandler.m */; };
+		B3C3D31819625A8D0035EAE9 /* image0.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C3D31419625A8C0035EAE9 /* image0.png */; };
+		B3C3D31919625A8D0035EAE9 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C3D31519625A8C0035EAE9 /* image1.png */; };
+		B3C3D31A19625A8D0035EAE9 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C3D31619625A8C0035EAE9 /* image2.png */; };
+		B3C3D31B19625A8D0035EAE9 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C3D31719625A8C0035EAE9 /* image3.png */; };
 		B3DCDAA8193EE9C200BAD04B /* DBCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DCDAA7193EE9C200BAD04B /* DBCommon.m */; };
 		B3DCDAAA193EF8D000BAD04B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DCDAA9193EF8D000BAD04B /* libsqlite3.dylib */; };
 		B3DCDAAF193F0E6D00BAD04B /* DBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DCDAAE193F0E6D00BAD04B /* DBUtil.m */; };
@@ -196,6 +200,10 @@
 		B37CF38219501EAE0064EA15 /* FiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FiveViewController.xib; sourceTree = "<group>"; };
 		B3AA41A8194A867700579A3D /* MyUncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		B3AA41A9194A867700579A3D /* MyUncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		B3C3D31419625A8C0035EAE9 /* image0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image0.png; sourceTree = "<group>"; };
+		B3C3D31519625A8C0035EAE9 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		B3C3D31619625A8C0035EAE9 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
+		B3C3D31719625A8C0035EAE9 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
 		B3DCDAA6193EE9C200BAD04B /* DBCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCommon.h; sourceTree = "<group>"; };
 		B3DCDAA7193EE9C200BAD04B /* DBCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCommon.m; sourceTree = "<group>"; };
 		B3DCDAA9193EF8D000BAD04B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -360,6 +368,7 @@
 		B310E0E9193855CE00A660A2 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				B3C3D31319625A8C0035EAE9 /* beautiful_image */,
 				B3FEFB5B1952C70D0032003D /* 素材合集——32*32 */,
 				B37CF36419501A000064EA15 /* image-tabbar */,
 				B310E0EC1938702900A660A2 /* section_bg.png */,
@@ -435,6 +444,17 @@
 				B37CF38219501EAE0064EA15 /* FiveViewController.xib */,
 			);
 			name = Five;
+			sourceTree = "<group>";
+		};
+		B3C3D31319625A8C0035EAE9 /* beautiful_image */ = {
+			isa = PBXGroup;
+			children = (
+				B3C3D31419625A8C0035EAE9 /* image0.png */,
+				B3C3D31519625A8C0035EAE9 /* image1.png */,
+				B3C3D31619625A8C0035EAE9 /* image2.png */,
+				B3C3D31719625A8C0035EAE9 /* image3.png */,
+			);
+			path = beautiful_image;
 			sourceTree = "<group>";
 		};
 		B3DCDAA5193EE8D500BAD04B /* Common */ = {
@@ -757,6 +777,7 @@
 				B3FEFC0A1952C70D0032003D /* readme.html in Resources */,
 				B3FEFC231952C70D0032003D /* trash_box.png in Resources */,
 				B3FEFC131952C70D0032003D /* shopping_cart.png in Resources */,
+				B3C3D31819625A8D0035EAE9 /* image0.png in Resources */,
 				B310E0ED1938702A00A660A2 /* section_bg.png in Resources */,
 				B3FEFC021952C70D0032003D /* pie-chart_graph.png in Resources */,
 				B3FEFBC41952C70D0032003D /* arrow_down.png in Resources */,
@@ -765,6 +786,7 @@
 				B3FEFBE61952C70D0032003D /* favorite_love.png in Resources */,
 				B3FEFC221952C70D0032003D /* time_clock.png in Resources */,
 				B3FEFBD31952C70D0032003D /* calendar.png in Resources */,
+				B3C3D31A19625A8D0035EAE9 /* image2.png in Resources */,
 				B310E0F31938816000A660A2 /* TwoViewController.xib in Resources */,
 				B3FEFC151952C70D0032003D /* smartphone_2.png in Resources */,
 				B3FEFBD61952C70D0032003D /* check.png in Resources */,
@@ -775,6 +797,7 @@
 				B3FEFBF21952C70D0032003D /* ipod.png in Resources */,
 				B3FEFBDE1952C70D0032003D /* copy.png in Resources */,
 				B3FEFBF91952C70D0032003D /* new_email.png in Resources */,
+				B3C3D31919625A8D0035EAE9 /* image1.png in Resources */,
 				B3FEFBE21952C70D0032003D /* delete_2.png in Resources */,
 				B3FEFC0E1952C70D0032003D /* save_as.png in Resources */,
 				B37CF36F19501A000064EA15 /* bottom.png in Resources */,
@@ -785,6 +808,7 @@
 				B3FEFC281952C70D0032003D /* vote_no.png in Resources */,
 				B3FEFBE41952C70D0032003D /* email.png in Resources */,
 				B3FEFC061952C70D0032003D /* previous.png in Resources */,
+				B3C3D31B19625A8D0035EAE9 /* image3.png in Resources */,
 				B3FEFBDB1952C70D0032003D /* comment.png in Resources */,
 				B3FEFBC71952C70D0032003D /* arrow_left.png in Resources */,
 				B3FEFC251952C70D0032003D /* unlock.png in Resources */,

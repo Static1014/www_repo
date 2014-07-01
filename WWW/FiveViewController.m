@@ -41,6 +41,10 @@
     self.myScrollView.showsHorizontalScrollIndicator = NO;//隐藏垂直和水平显示条
     self.myScrollView.delegate = self;
 
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(clickScrollView:)];
+    singleTap.cancelsTouchesInView = NO;
+    [self.myScrollView addGestureRecognizer:singleTap];
+
     //set the last as the first
     UIImageView *firstView = [[UIImageView alloc] initWithImage:[imageArray lastObject]];
     CGFloat Width = self.myScrollView.frame.size.width;
@@ -81,6 +85,10 @@
 
     myTimer=[NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(scrollToNextPage:) userInfo:nil repeats:YES];
 
+}
+
+- (void)clickScrollView:(UITapGestureRecognizer*)tap {
+    NSLog(@"-----%d",self.pageControl.currentPage);
 }
 
 #pragma UIScrollView delegate

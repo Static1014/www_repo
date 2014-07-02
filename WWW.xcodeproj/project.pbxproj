@@ -12,6 +12,8 @@
 		B310E0ED1938702A00A660A2 /* section_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B310E0EC1938702900A660A2 /* section_bg.png */; };
 		B310E0F21938816000A660A2 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B310E0F01938816000A660A2 /* TwoViewController.m */; };
 		B310E0F31938816000A660A2 /* TwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B310E0F11938816000A660A2 /* TwoViewController.xib */; };
+		B3387D851963AF30005A9D79 /* SixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3387D831963AF30005A9D79 /* SixViewController.m */; };
+		B3387D861963AF30005A9D79 /* SixViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3387D841963AF30005A9D79 /* SixViewController.xib */; };
 		B37CF35E194EEA9D0064EA15 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37CF35C194EEA9D0064EA15 /* ThreeViewController.m */; };
 		B37CF35F194EEA9D0064EA15 /* ThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37CF35D194EEA9D0064EA15 /* ThreeViewController.xib */; };
 		B37CF363195018070064EA15 /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37CF362195018070064EA15 /* MyTabBarController.m */; };
@@ -178,6 +180,9 @@
 		B310E0EF1938816000A660A2 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		B310E0F01938816000A660A2 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		B310E0F11938816000A660A2 /* TwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoViewController.xib; sourceTree = "<group>"; };
+		B3387D821963AF30005A9D79 /* SixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixViewController.h; sourceTree = "<group>"; };
+		B3387D831963AF30005A9D79 /* SixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixViewController.m; sourceTree = "<group>"; };
+		B3387D841963AF30005A9D79 /* SixViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SixViewController.xib; sourceTree = "<group>"; };
 		B37CF35B194EEA9D0064EA15 /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
 		B37CF35C194EEA9D0064EA15 /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		B37CF35D194EEA9D0064EA15 /* ThreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeViewController.xib; sourceTree = "<group>"; };
@@ -387,6 +392,16 @@
 			name = Two;
 			sourceTree = "<group>";
 		};
+		B3387D811963AEFF005A9D79 /* Six */ = {
+			isa = PBXGroup;
+			children = (
+				B3387D821963AF30005A9D79 /* SixViewController.h */,
+				B3387D831963AF30005A9D79 /* SixViewController.m */,
+				B3387D841963AF30005A9D79 /* SixViewController.xib */,
+			);
+			name = Six;
+			sourceTree = "<group>";
+		};
 		B37CF35A194EEA740064EA15 /* Three */ = {
 			isa = PBXGroup;
 			children = (
@@ -523,6 +538,7 @@
 				B37CF35A194EEA740064EA15 /* Three */,
 				B37CF37919501E430064EA15 /* Four */,
 				B37CF37F19501E9E0064EA15 /* Five */,
+				B3387D811963AEFF005A9D79 /* Six */,
 				B310E0E9193855CE00A660A2 /* image */,
 				B3E87E6E19357938006F8DF4 /* Images.xcassets */,
 				B3E87E6319357938006F8DF4 /* Supporting Files */,
@@ -821,6 +837,7 @@
 				B3FEFBDF1952C70D0032003D /* credit_card.png in Resources */,
 				B3FEFBE11952C70D0032003D /* cut.png in Resources */,
 				B3FEFBDC1952C70D0032003D /* computer.png in Resources */,
+				B3387D861963AF30005A9D79 /* SixViewController.xib in Resources */,
 				B3FEFBEA1952C70D0032003D /* flag_mark_violet.png in Resources */,
 				B3FEFBF51952C70D0032003D /* minus.png in Resources */,
 				B3FEFC0C1952C70D0032003D /* refresh.png in Resources */,
@@ -911,6 +928,7 @@
 				B3E87E8F193579FB006F8DF4 /* OneViewController.m in Sources */,
 				B3E87E6D19357938006F8DF4 /* AppDelegate.m in Sources */,
 				B3E32995194055470041817A /* BusinessUtil.m in Sources */,
+				B3387D851963AF30005A9D79 /* SixViewController.m in Sources */,
 				B3DCDAAF193F0E6D00BAD04B /* DBUtil.m in Sources */,
 				B310E0E619382B6100A660A2 /* OneCell.m in Sources */,
 				B37CF37D19501E6F0064EA15 /* FourViewController.m in Sources */,

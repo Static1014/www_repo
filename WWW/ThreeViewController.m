@@ -10,6 +10,7 @@
 #import "FourViewController.h"
 #import "BusinessUtil.h"
 #import "MyCell.h"
+#import "SixViewController.h"
 
 @interface ThreeViewController () {
     UIProgressView *progress;
@@ -107,7 +108,10 @@
 }
 
 - (void)clickL2:(UIBarButtonItem*)btn {
-    NSLog(@"-----L2");
+    SixViewController *six = [[SixViewController alloc]initWithNibName:@"SixViewController" bundle:nil];
+    six.title = @"Six Page";
+    [self.navigationController pushViewController:six animated:YES];
+    [six release];
 }
 
 #pragma mark - SearchBar

@@ -89,6 +89,7 @@
 
 - (void)clickScrollView:(UITapGestureRecognizer*)tap {
     NSLog(@"-----%d",self.pageControl.currentPage);
+    
 }
 
 #pragma UIScrollView delegate

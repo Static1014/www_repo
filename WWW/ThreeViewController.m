@@ -7,7 +7,7 @@
 //
 
 #import "ThreeViewController.h"
-#import "FourViewController.h"
+#import "FiveViewController.h"
 #import "BusinessUtil.h"
 #import "MyCell.h"
 #import "SixViewController.h"
@@ -101,8 +101,8 @@
 }
 
 - (void)clickR2:(UIBarButtonItem*)btn {
-    FourViewController *four = [[FourViewController alloc]initWithNibName:@"FourViewController" bundle:nil];
-    four.title = @"Four Page";
+    FiveViewController *four = [[FiveViewController alloc]initWithNibName:@"FiveViewController" bundle:nil];
+    four.title = @"Five Page";
     [self.navigationController pushViewController:four animated:YES];
     [four release];
 }

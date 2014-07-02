@@ -9,7 +9,9 @@
 #import "SixViewController.h"
 #import <QuartzCore/CoreAnimation.h>
 
-@interface SixViewController ()
+@interface SixViewController () {
+    BOOL over;
+}
 
 @end
 
@@ -26,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    over = YES;
 
     [self setNavigationBar];
 }
@@ -47,6 +50,11 @@
     [_btn7 release];
     [_btn8 release];
     [_btnView release];
+    [_bug1 release];
+    [_bug2 release];
+    [_bug3 release];
+    [_bug4 release];
+    [_bug5 release];
     [super dealloc];
 }
 
@@ -86,9 +94,9 @@
     BOOL isOpen = _btn1.frame.size.width==32?YES:NO;
 
     [UIView animateWithDuration:1 animations:^{
-        CGAffineTransform trans = _btnView.transform;
-        trans = CGAffineTransformTranslate(trans, isOpen?-100:100, isOpen?-100:100);
-        _btnView.transform = trans;
+//        CGAffineTransform trans = _btnView.transform;
+//        trans = CGAffineTransformTranslate(trans, isOpen?-100:100, isOpen?-100:100);
+//        _btnView.transform = trans;
 
         CGAffineTransform transform = _btnSet.transform;
         transform = CGAffineTransformRotate(transform, isOpen?-4:4);
@@ -158,5 +166,140 @@
         frame.size.height = isOpen?0:32;
         _btn1.frame = frame;
     }];
+}
+
+
+- (IBAction)clickBug1:(id)sender {
+    if (over) {
+        over = NO;
+        [self setBugsLocations];
+    }
+}
+
+- (void)setBugsLocations {
+    BOOL isShow = _bug5.frame.origin.y>0?YES:NO;
+
+    [UIView animateWithDuration:0.5 animations:^{
+        CGRect frame = _bug2.frame;
+        frame.origin.y = isShow?-32:120;
+        _bug2.frame = frame;
+
+        frame = _bug3.frame;
+        frame.origin.y = isShow?-32:220;
+        _bug3.frame = frame;
+
+        frame = _bug4.frame;
+        frame.origin.y = isShow?-32:320;
+        _bug4.frame = frame;
+
+        frame = _bug5.frame;
+        frame.origin.y = isShow?-32:420;
+        _bug5.frame = frame;
+    } completion:^(BOOL finished){
+        if (!isShow) {
+            //第一次反弹
+            [UIView animateWithDuration:0.4 animations:^{
+                CGRect frame = _bug2.frame;
+                frame.origin.y -= 20;
+                _bug2.frame = frame;
+
+                frame = _bug3.frame;
+                frame.origin.y -= 40;
+                _bug3.frame = frame;
+
+                frame = _bug4.frame;
+                frame.origin.y -= 60;
+                _bug4.frame = frame;
+
+                frame = _bug5.frame;
+                frame.origin.y -= 80;
+                _bug5.frame = frame;
+            } completion:^(BOOL finished){
+                [UIView animateWithDuration:0.4 animations:^{
+                    CGRect frame = _bug2.frame;
+                    frame.origin.y += 20;
+                    _bug2.frame = frame;
+
+                    frame = _bug3.frame;
+                    frame.origin.y += 40;
+                    _bug3.frame = frame;
+
+                    frame = _bug4.frame;
+                    frame.origin.y += 60;
+                    _bug4.frame = frame;
+                    
+                    frame = _bug5.frame;
+                    frame.origin.y += 80;
+                    _bug5.frame = frame;
+                } completion:^(BOOL finished){
+                    //第二次反弹
+                    [UIView animateWithDuration:0.3 animations:^{
+                        CGRect frame = _bug3.frame;
+                        frame.origin.y -= 20;
+                        _bug3.frame = frame;
+
+                        frame = _bug4.frame;
+                        frame.origin.y -= 40;
+                        _bug4.frame = frame;
+                        
+                        frame = _bug5.frame;
+                        frame.origin.y -= 60;
+                        _bug5.frame = frame;
+                    } completion:^(BOOL finished){
+                        [UIView animateWithDuration:0.3 animations:^{
+                            CGRect frame = _bug3.frame;
+                            frame.origin.y += 20;
+                            _bug3.frame = frame;
+
+                            frame = _bug4.frame;
+                            frame.origin.y += 40;
+                            _bug4.frame = frame;
+
+                            frame = _bug5.frame;
+                            frame.origin.y += 60;
+                            _bug5.frame = frame;
+                        } completion:^(BOOL finished){
+                            //第三次反弹
+                            [UIView animateWithDuration:0.3 animations:^{
+                                CGRect frame = _bug4.frame;
+                                frame.origin.y -= 20;
+                                _bug4.frame = frame;
+
+                                frame = _bug5.frame;
+                                frame.origin.y -= 40;
+                                _bug5.frame = frame;
+                            } completion:^(BOOL finished){
+                                [UIView animateWithDuration:0.3 animations:^{
+                                CGRect frame = _bug4.frame;
+                                frame.origin.y += 20;
+                                _bug4.frame = frame;
+
+                                frame = _bug5.frame;
+                                frame.origin.y += 40;
+                                _bug5.frame = frame;
+                                } completion:^(BOOL finished){
+                                    //第四次反弹
+                                    [UIView animateWithDuration:0.3 animations:^{
+                                        CGRect frame = _bug5.frame;
+                                        frame.origin.y -= 20;
+                                        _bug5.frame = frame;
+                                    } completion:^(BOOL finished){
+                                        [UIView animateWithDuration:0.3 animations:^{
+                                            CGRect frame = _bug5.frame;
+                                            frame.origin.y += 20;
+                                            _bug5.frame = frame;
+                                        } completion:^(BOOL finished){
+                                            over = YES;
+                                        }];
+                                    }];
+                                }];
+                            }];
+                         }];
+                    }];
+                }];
+            }];
+        }
+    }];
+
 }
 @end

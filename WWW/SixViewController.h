@@ -27,4 +27,11 @@
 @property (retain, nonatomic) IBOutlet UIButton *btn8;
 - (IBAction)clickBtnSet:(id)sender;
 
+@property (retain, nonatomic) IBOutlet UIButton *bug1;
+@property (retain, nonatomic) IBOutlet UIButton *bug2;
+@property (retain, nonatomic) IBOutlet UIButton *bug3;
+@property (retain, nonatomic) IBOutlet UIButton *bug4;
+@property (retain, nonatomic) IBOutlet UIButton *bug5;
+- (IBAction)clickBug1:(id)sender;
+
 @end

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MyUncaughtExceptionHandler.h"
 #import "MyTabBarController.h"
+#import "DBCommon.h"
 
 @implementation AppDelegate
 
@@ -17,8 +18,9 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]autorelease];
 
     [MyUncaughtExceptionHandler setDefaultHandler];
+    [DBCommon shared];
 
-    MyTabBarController *myTabBar = [[MyTabBarController alloc]initWithNibName:@"" bundle:nil];
+    MyTabBarController *myTabBar = [[MyTabBarController alloc]init];
     self.window.rootViewController = myTabBar;
     self.window.backgroundColor = [UIColor whiteColor];
     [myTabBar release];

@@ -31,6 +31,8 @@
 		B37CF38319501EAE0064EA15 /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37CF38119501EAE0064EA15 /* FiveViewController.m */; };
 		B37CF38419501EAE0064EA15 /* FiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37CF38219501EAE0064EA15 /* FiveViewController.xib */; };
 		B3AA41AA194A867700579A3D /* MyUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA41A9194A867700579A3D /* MyUncaughtExceptionHandler.m */; };
+		B3AF9CBD1966925000BF585F /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AF9CB11966916D00BF585F /* libcrypto.a */; };
+		B3AF9CBE1966925400BF585F /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AF9CB81966917E00BF585F /* libsqlcipher.a */; };
 		B3C3D31819625A8D0035EAE9 /* image0.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C3D31419625A8C0035EAE9 /* image0.png */; };
 		B3C3D31919625A8D0035EAE9 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C3D31519625A8C0035EAE9 /* image1.png */; };
 		B3C3D31A19625A8D0035EAE9 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C3D31619625A8C0035EAE9 /* image2.png */; };
@@ -42,6 +44,8 @@
 		B3E18BCC195429F200141B00 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E18BCB195429F200141B00 /* MyCell.xib */; };
 		B3E32992194004B20041817A /* w.db in Resources */ = {isa = PBXBuildFile; fileRef = B3E32991194004B20041817A /* w.db */; };
 		B3E32995194055470041817A /* BusinessUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E32994194055470041817A /* BusinessUtil.m */; };
+		B3E419B2196A37F90097805C /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E419B1196A37F90097805C /* libssl.a */; };
+		B3E419B5196A38380097805C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E419B4196A38380097805C /* libcrypto.a */; };
 		B3E87E5D19357938006F8DF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E87E5C19357938006F8DF4 /* Foundation.framework */; };
 		B3E87E5F19357938006F8DF4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E87E5E19357938006F8DF4 /* CoreGraphics.framework */; };
 		B3E87E6119357938006F8DF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E87E6019357938006F8DF4 /* UIKit.framework */; };
@@ -163,6 +167,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B3AF9CB01966916D00BF585F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3AF9CAC1966916900BF585F /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9069D28C0FCE659A0042E34C;
+			remoteInfo = crypto;
+		};
+		B3AF9CB71966917E00BF585F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3AF9CB21966917E00BF585F /* sqlcipher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
+			remoteInfo = sqlcipher;
+		};
+		B3AF9CB91966923600BF585F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3AF9CB21966917E00BF585F /* sqlcipher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = sqlcipher;
+		};
+		B3AF9CBB1966923A00BF585F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3AF9CAC1966916900BF585F /* openssl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9069D28B0FCE659A0042E34C;
+			remoteInfo = crypto;
+		};
 		B3E87E7919357938006F8DF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B3E87E5119357937006F8DF4 /* Project object */;
@@ -205,6 +237,8 @@
 		B37CF38219501EAE0064EA15 /* FiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FiveViewController.xib; sourceTree = "<group>"; };
 		B3AA41A8194A867700579A3D /* MyUncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		B3AA41A9194A867700579A3D /* MyUncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		B3AF9CAC1966916900BF585F /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = "openssl-xcode/openssl.xcodeproj"; sourceTree = "<group>"; };
+		B3AF9CB21966917E00BF585F /* sqlcipher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.xcodeproj; path = sqlcipher/sqlcipher.xcodeproj; sourceTree = "<group>"; };
 		B3C3D31419625A8C0035EAE9 /* image0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image0.png; sourceTree = "<group>"; };
 		B3C3D31519625A8C0035EAE9 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 		B3C3D31619625A8C0035EAE9 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
@@ -220,6 +254,8 @@
 		B3E32991194004B20041817A /* w.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = w.db; sourceTree = "<group>"; };
 		B3E32993194055470041817A /* BusinessUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessUtil.h; sourceTree = "<group>"; };
 		B3E32994194055470041817A /* BusinessUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessUtil.m; sourceTree = "<group>"; };
+		B3E419B1196A37F90097805C /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "openssl-1.0.0e/libssl.a"; sourceTree = "<group>"; };
+		B3E419B4196A38380097805C /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "openssl-xcode/libcrypto.a"; sourceTree = "<group>"; };
 		B3E87E5919357938006F8DF4 /* WWW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E87E5C19357938006F8DF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3E87E5E19357938006F8DF4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -350,6 +386,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E419B5196A38380097805C /* libcrypto.a in Frameworks */,
+				B3E419B2196A37F90097805C /* libssl.a in Frameworks */,
+				B3AF9CBE1966925400BF585F /* libsqlcipher.a in Frameworks */,
+				B3AF9CBD1966925000BF585F /* libcrypto.a in Frameworks */,
 				B3DCDAAA193EF8D000BAD04B /* libsqlite3.dylib in Frameworks */,
 				B3E87E5F19357938006F8DF4 /* CoreGraphics.framework in Frameworks */,
 				B3E87E6119357938006F8DF4 /* UIKit.framework in Frameworks */,
@@ -461,6 +501,22 @@
 			name = Five;
 			sourceTree = "<group>";
 		};
+		B3AF9CAD1966916900BF585F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3AF9CB11966916D00BF585F /* libcrypto.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3AF9CB31966917E00BF585F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3AF9CB81966917E00BF585F /* libsqlcipher.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B3C3D31319625A8C0035EAE9 /* beautiful_image */ = {
 			isa = PBXGroup;
 			children = (
@@ -500,6 +556,8 @@
 		B3E87E5019357937006F8DF4 = {
 			isa = PBXGroup;
 			children = (
+				B3AF9CB21966917E00BF585F /* sqlcipher.xcodeproj */,
+				B3AF9CAC1966916900BF585F /* openssl.xcodeproj */,
 				B3E87E6219357938006F8DF4 /* WWW */,
 				B3E87E7B19357938006F8DF4 /* WWWTests */,
 				B3E87E5B19357938006F8DF4 /* Frameworks */,
@@ -519,6 +577,8 @@
 		B3E87E5B19357938006F8DF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3E419B4196A38380097805C /* libcrypto.a */,
+				B3E419B1196A37F90097805C /* libssl.a */,
 				B3DCDAA9193EF8D000BAD04B /* libsqlite3.dylib */,
 				B3E87E5C19357938006F8DF4 /* Foundation.framework */,
 				B3E87E5E19357938006F8DF4 /* CoreGraphics.framework */,
@@ -713,6 +773,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				B3AF9CBC1966923A00BF585F /* PBXTargetDependency */,
+				B3AF9CBA1966923600BF585F /* PBXTargetDependency */,
 			);
 			name = WWW;
 			productName = WWW;
@@ -764,6 +826,16 @@
 			mainGroup = B3E87E5019357937006F8DF4;
 			productRefGroup = B3E87E5A19357938006F8DF4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B3AF9CAD1966916900BF585F /* Products */;
+					ProjectRef = B3AF9CAC1966916900BF585F /* openssl.xcodeproj */;
+				},
+				{
+					ProductGroup = B3AF9CB31966917E00BF585F /* Products */;
+					ProjectRef = B3AF9CB21966917E00BF585F /* sqlcipher.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B3E87E5819357938006F8DF4 /* WWW */,
@@ -771,6 +843,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B3AF9CB11966916D00BF585F /* libcrypto.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcrypto.a;
+			remoteRef = B3AF9CB01966916D00BF585F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B3AF9CB81966917E00BF585F /* libsqlcipher.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsqlcipher.a;
+			remoteRef = B3AF9CB71966917E00BF585F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B3E87E5719357938006F8DF4 /* Resources */ = {
@@ -953,6 +1042,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B3AF9CBA1966923600BF585F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlcipher;
+			targetProxy = B3AF9CB91966923600BF585F /* PBXContainerItemProxy */;
+		};
+		B3AF9CBC1966923A00BF585F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = crypto;
+			targetProxy = B3AF9CBB1966923A00BF585F /* PBXContainerItemProxy */;
+		};
 		B3E87E7A19357938006F8DF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B3E87E5819357938006F8DF4 /* WWW */;
@@ -1060,6 +1159,7 @@
 		B3E87E8619357938006F8DF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -1067,6 +1167,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWW/WWW-Prefix.pch";
 				INFOPLIST_FILE = "WWW/WWW-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl-1.0.0e",
+					"$(PROJECT_DIR)/openssl-xcode",
+				);
+				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos7.1;
@@ -1077,6 +1183,7 @@
 		B3E87E8719357938006F8DF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -1084,6 +1191,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWW/WWW-Prefix.pch";
 				INFOPLIST_FILE = "WWW/WWW-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl-1.0.0e",
+					"$(PROJECT_DIR)/openssl-xcode",
+				);
+				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos7.1;

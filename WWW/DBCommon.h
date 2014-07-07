@@ -11,6 +11,7 @@
 @interface DBCommon : NSObject
 
 + (id)shared;
++ (void)createDatabaseAndTables;
 - (NSMutableArray*)selectDB:(NSString*)tableName condition:(NSArray*)condition;
 - (void)insertDB:(NSString*)tableName columnName:(NSArray*)columnName values:(NSArray*)values intFlg:(NSArray*)isInt;
 - (void)updateDB:(NSString*)tableName detail:(NSArray*)detail condition:(NSArray*)condition;

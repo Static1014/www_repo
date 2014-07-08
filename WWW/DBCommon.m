@@ -12,7 +12,7 @@
 @implementation DBCommon
 static DBCommon *dbcon = nil;
 static NSString *dbFile = @"test.db";
-static NSString *pwd = @"!QAZxsw2";
+//static NSString *pwd = @"!QAZxsw2";
 static char *merror;
 
 + (id)shared {
@@ -39,8 +39,8 @@ static char *merror;
         }
         NSLog(@"Create database successfully!");
 
-        const char *key = [pwd UTF8String];
-        NSLog(@"Database password created %@, pwd is %@", sqlite3_key(db,key,(int)strlen(key))==SQLITE_OK?@"successfully":@"failed",pwd);
+//        const char *key = [pwd UTF8String];
+//        NSLog(@"Database password created %@, pwd is %@", sqlite3_key(db,key,(int)strlen(key))==SQLITE_OK?@"successfully":@"failed",pwd);
 
         NSString *createTable1Sql = @"CREATE TABLE USER_INFO(USER_ID INTEGER PRIMARY KEY AUTOINCREMENT, USER_NAME TEXT, PASSWORD TEXT, ATTRIBUTION TEXT, IMG_PATH TEXT)";
         if (sqlite3_exec(db, [createTable1Sql UTF8String], NULL, NULL, NULL) != SQLITE_OK) {
@@ -66,8 +66,8 @@ static char *merror;
     NSMutableArray *result = [[NSMutableArray alloc]init];
     sqlite3 *db;
     if (sqlite3_open([[self getDBpath] UTF8String], &db) == SQLITE_OK) {
-        const char *key = [pwd UTF8String];
-        if (sqlite3_key(db,key,(int)strlen(key)) == SQLITE_OK) {
+//        const char *key = [pwd UTF8String];
+//        if (sqlite3_key(db,key,(int)strlen(key)) == SQLITE_OK) {
             sqlite3_stmt *statement;
             NSString *sql = nil;
 
@@ -119,9 +119,9 @@ static char *merror;
 
             sqlite3_finalize(statement);
             [sql release];
-        } else {
-            NSLog(@"password for databse is wrong!");
-        }
+//        } else {
+//            NSLog(@"password for databse is wrong!");
+//        }
     }
     sqlite3_close(db);
 
@@ -131,8 +131,8 @@ static char *merror;
 - (void)insertDB:(NSString *)tableName columnName:(NSArray *)columnName values:(NSArray *)values intFlg:(NSArray*)isInt {
     sqlite3 *db;
     if (sqlite3_open([[self getDBpath] UTF8String], &db) == SQLITE_OK) {
-        const char *key = [pwd UTF8String];
-        if (sqlite3_key(db,key,(int)strlen(key)) == SQLITE_OK) {
+//        const char *key = [pwd UTF8String];
+//        if (sqlite3_key(db,key,(int)strlen(key)) == SQLITE_OK) {
         NSMutableString *columnNameStr = [[NSMutableString alloc]init];
         NSMutableString *valueStr = [[NSMutableString alloc]init];
 
@@ -171,9 +171,9 @@ static char *merror;
 
         [columnNameStr release];
         [valueStr release];
-        } else {
-            NSLog(@"password for databse is wrong!");
-        }
+//        } else {
+//            NSLog(@"password for databse is wrong!");
+//        }
     }
     sqlite3_close(db);
 }
@@ -181,8 +181,8 @@ static char *merror;
 - (void)updateDB:(NSString *)tableName detail:(NSArray *)detail condition:(NSArray *)condition {
     sqlite3 *db;
     if (sqlite3_open([[self getDBpath] UTF8String], &db) == SQLITE_OK) {
-        const char *key = [pwd UTF8String];
-        if (sqlite3_key(db,key,(int)strlen(key)) == SQLITE_OK) {
+//        const char *key = [pwd UTF8String];
+//        if (sqlite3_key(db,key,(int)strlen(key)) == SQLITE_OK) {
         NSMutableString *detailStr = [[NSMutableString alloc]init];
         NSMutableString *conditionStr = [[NSMutableString alloc]init];
         NSString *sql = nil;
@@ -219,9 +219,9 @@ static char *merror;
 
         [detailStr release];
         [conditionStr release];
-        } else {
-            NSLog(@"password for databse is wrong!");
-        }
+//        } else {
+//            NSLog(@"password for databse is wrong!");
+//        }
     }
     sqlite3_close(db);
 }
@@ -229,8 +229,8 @@ static char *merror;
 - (void)deleteDB:(NSString *)tableName condition:(NSArray *)condition {
     sqlite3 *db;
     if (sqlite3_open([[self getDBpath] UTF8String], &db) == SQLITE_OK) {
-        const char *key = [pwd UTF8String];
-        if (sqlite3_key(db,key,(int)strlen(key)) == SQLITE_OK) {
+//        const char *key = [pwd UTF8String];
+//        if (sqlite3_key(db,key,(int)strlen(key)) == SQLITE_OK) {
         NSMutableString *conditionStr = [[NSMutableString alloc]init];
         NSString *sql = nil;
 
@@ -255,9 +255,9 @@ static char *merror;
         }
 
         [conditionStr release];
-        } else {
-            NSLog(@"password for databse is wrong!");
-        }
+//        } else {
+//            NSLog(@"password for databse is wrong!");
+//        }
     }
     sqlite3_close(db);
 }

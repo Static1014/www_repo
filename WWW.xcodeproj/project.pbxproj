@@ -7,6 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B30E84C6196BE50900689D67 /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84C2196BE50900689D67 /* 111.png */; };
+		B30E84C7196BE50900689D67 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84C3196BE50900689D67 /* 222.png */; };
+		B30E84C8196BE50900689D67 /* 333.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84C4196BE50900689D67 /* 333.png */; };
+		B30E84C9196BE50900689D67 /* 444.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84C5196BE50900689D67 /* 444.png */; };
+		B30E84F4196BEC6900689D67 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84CD196BEC6900689D67 /* logo.png */; };
+		B30E84F5196BEC6900689D67 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84CF196BEC6900689D67 /* icon.png */; };
+		B30E84F6196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.23”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D1196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.23”.png */; };
+		B30E84F7196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.28”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D2196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.28”.png */; };
+		B30E84F8196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.53”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D3196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.53”.png */; };
+		B30E84F9196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.00”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D4196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.00”.png */; };
+		B30E84FA196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.06”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D5196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.06”.png */; };
+		B30E84FB196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.17”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D6196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.17”.png */; };
+		B30E84FC196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.29”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D7196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.29”.png */; };
+		B30E84FD196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.22”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D8196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.22”.png */; };
+		B30E84FE196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.33”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D9196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.33”.png */; };
+		B30E84FF196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.02”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84DA196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.02”.png */; };
+		B30E8500196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.19”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84DB196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.19”.png */; };
+		B30E8501196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.27”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84DC196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.27”.png */; };
+		B30E8502196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.31”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84DD196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.31”.png */; };
+		B30E8503196BEC6900689D67 /* 02-list-UI-01.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84DF196BEC6900689D67 /* 02-list-UI-01.png */; };
+		B30E8504196BEC6900689D67 /* 03-help-UI.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E0196BEC6900689D67 /* 03-help-UI.png */; };
+		B30E8505196BEC6900689D67 /* 04-UI.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E1196BEC6900689D67 /* 04-UI.png */; };
+		B30E8506196BEC6900689D67 /* 05-UI.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E2196BEC6900689D67 /* 05-UI.png */; };
+		B30E8507196BEC6900689D67 /* 06-UI.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E3196BEC6900689D67 /* 06-UI.png */; };
+		B30E8508196BEC6900689D67 /* 07-UI.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E4196BEC6900689D67 /* 07-UI.png */; };
+		B30E8509196BEC6900689D67 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E5196BEC6900689D67 /* icon@2x.png */; };
+		B30E850A196BEC6900689D67 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E8196BEC6900689D67 /* icon.png */; };
+		B30E850B196BEC6900689D67 /* icon52.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E9196BEC6900689D67 /* icon52.png */; };
+		B30E850C196BEC6900689D67 /* Screenshot_2014-04-02-16-06-20.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84EA196BEC6900689D67 /* Screenshot_2014-04-02-16-06-20.png */; };
+		B30E850D196BEC6900689D67 /* Screenshot_2014-04-02-16-06-43.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84EB196BEC6900689D67 /* Screenshot_2014-04-02-16-06-43.png */; };
+		B30E850E196BEC6900689D67 /* Screenshot_2014-04-02-16-07-04.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84EC196BEC6900689D67 /* Screenshot_2014-04-02-16-07-04.png */; };
+		B30E850F196BEC6900689D67 /* Screenshot_2014-04-02-16-07-14.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84ED196BEC6900689D67 /* Screenshot_2014-04-02-16-07-14.png */; };
+		B30E8510196BEC6900689D67 /* Screenshot_2014-04-02-16-19-03.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84EE196BEC6900689D67 /* Screenshot_2014-04-02-16-19-03.png */; };
+		B30E8511196BEC6900689D67 /* Screenshot_2014-04-02-16-19-13.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84EF196BEC6900689D67 /* Screenshot_2014-04-02-16-19-13.png */; };
+		B30E8512196BEC6900689D67 /* Screenshot_2014-04-02-16-58-24.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84F0196BEC6900689D67 /* Screenshot_2014-04-02-16-58-24.png */; };
+		B30E8513196BEC6900689D67 /* スクリーンショット 2014-04-02 16.52.18.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84F1196BEC6900689D67 /* スクリーンショット 2014-04-02 16.52.18.png */; };
+		B30E8514196BEC6900689D67 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84F3196BEC6900689D67 /* icon@2x.png */; };
 		B310E0E619382B6100A660A2 /* OneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B310E0E519382B6100A660A2 /* OneCell.m */; };
 		B310E0E8193855C900A660A2 /* item.png in Resources */ = {isa = PBXBuildFile; fileRef = B310E0E7193855C800A660A2 /* item.png */; };
 		B310E0ED1938702A00A660A2 /* section_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B310E0EC1938702900A660A2 /* section_bg.png */; };
@@ -31,12 +68,6 @@
 		B37CF38319501EAE0064EA15 /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37CF38119501EAE0064EA15 /* FiveViewController.m */; };
 		B37CF38419501EAE0064EA15 /* FiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37CF38219501EAE0064EA15 /* FiveViewController.xib */; };
 		B3AA41AA194A867700579A3D /* MyUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA41A9194A867700579A3D /* MyUncaughtExceptionHandler.m */; };
-		B3AF9CBD1966925000BF585F /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AF9CB11966916D00BF585F /* libcrypto.a */; };
-		B3AF9CBE1966925400BF585F /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AF9CB81966917E00BF585F /* libsqlcipher.a */; };
-		B3C3D31819625A8D0035EAE9 /* image0.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C3D31419625A8C0035EAE9 /* image0.png */; };
-		B3C3D31919625A8D0035EAE9 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C3D31519625A8C0035EAE9 /* image1.png */; };
-		B3C3D31A19625A8D0035EAE9 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C3D31619625A8C0035EAE9 /* image2.png */; };
-		B3C3D31B19625A8D0035EAE9 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C3D31719625A8C0035EAE9 /* image3.png */; };
 		B3DCDAA8193EE9C200BAD04B /* DBCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DCDAA7193EE9C200BAD04B /* DBCommon.m */; };
 		B3DCDAAA193EF8D000BAD04B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DCDAA9193EF8D000BAD04B /* libsqlite3.dylib */; };
 		B3DCDAAF193F0E6D00BAD04B /* DBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DCDAAE193F0E6D00BAD04B /* DBUtil.m */; };
@@ -44,8 +75,6 @@
 		B3E18BCC195429F200141B00 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E18BCB195429F200141B00 /* MyCell.xib */; };
 		B3E32992194004B20041817A /* w.db in Resources */ = {isa = PBXBuildFile; fileRef = B3E32991194004B20041817A /* w.db */; };
 		B3E32995194055470041817A /* BusinessUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E32994194055470041817A /* BusinessUtil.m */; };
-		B3E419B2196A37F90097805C /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E419B1196A37F90097805C /* libssl.a */; };
-		B3E419B5196A38380097805C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E419B4196A38380097805C /* libcrypto.a */; };
 		B3E87E5D19357938006F8DF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E87E5C19357938006F8DF4 /* Foundation.framework */; };
 		B3E87E5F19357938006F8DF4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E87E5E19357938006F8DF4 /* CoreGraphics.framework */; };
 		B3E87E6119357938006F8DF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E87E6019357938006F8DF4 /* UIKit.framework */; };
@@ -167,34 +196,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B3AF9CB01966916D00BF585F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3AF9CAC1966916900BF585F /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9069D28C0FCE659A0042E34C;
-			remoteInfo = crypto;
-		};
-		B3AF9CB71966917E00BF585F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3AF9CB21966917E00BF585F /* sqlcipher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC046055464E500DB518D;
-			remoteInfo = sqlcipher;
-		};
-		B3AF9CB91966923600BF585F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3AF9CB21966917E00BF585F /* sqlcipher.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC045055464E500DB518D;
-			remoteInfo = sqlcipher;
-		};
-		B3AF9CBB1966923A00BF585F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3AF9CAC1966916900BF585F /* openssl.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9069D28B0FCE659A0042E34C;
-			remoteInfo = crypto;
-		};
 		B3E87E7919357938006F8DF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B3E87E5119357937006F8DF4 /* Project object */;
@@ -205,6 +206,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B30E84C2196BE50900689D67 /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.png; sourceTree = "<group>"; };
+		B30E84C3196BE50900689D67 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
+		B30E84C4196BE50900689D67 /* 333.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 333.png; sourceTree = "<group>"; };
+		B30E84C5196BE50900689D67 /* 444.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 444.png; sourceTree = "<group>"; };
+		B30E84CD196BEC6900689D67 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		B30E84CF196BEC6900689D67 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		B30E84D1196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.23”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.07.23”.png"; sourceTree = "<group>"; };
+		B30E84D2196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.28”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.07.28”.png"; sourceTree = "<group>"; };
+		B30E84D3196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.53”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.07.53”.png"; sourceTree = "<group>"; };
+		B30E84D4196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.00”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.08.00”.png"; sourceTree = "<group>"; };
+		B30E84D5196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.06”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.08.06”.png"; sourceTree = "<group>"; };
+		B30E84D6196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.17”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.08.17”.png"; sourceTree = "<group>"; };
+		B30E84D7196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.29”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.08.29”.png"; sourceTree = "<group>"; };
+		B30E84D8196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.22”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.09.22”.png"; sourceTree = "<group>"; };
+		B30E84D9196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.33”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.09.33”.png"; sourceTree = "<group>"; };
+		B30E84DA196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.02”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.10.02”.png"; sourceTree = "<group>"; };
+		B30E84DB196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.19”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.10.19”.png"; sourceTree = "<group>"; };
+		B30E84DC196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.27”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.10.27”.png"; sourceTree = "<group>"; };
+		B30E84DD196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.31”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.10.31”.png"; sourceTree = "<group>"; };
+		B30E84DF196BEC6900689D67 /* 02-list-UI-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-list-UI-01.png"; sourceTree = "<group>"; };
+		B30E84E0196BEC6900689D67 /* 03-help-UI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "03-help-UI.png"; sourceTree = "<group>"; };
+		B30E84E1196BEC6900689D67 /* 04-UI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "04-UI.png"; sourceTree = "<group>"; };
+		B30E84E2196BEC6900689D67 /* 05-UI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "05-UI.png"; sourceTree = "<group>"; };
+		B30E84E3196BEC6900689D67 /* 06-UI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-UI.png"; sourceTree = "<group>"; };
+		B30E84E4196BEC6900689D67 /* 07-UI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "07-UI.png"; sourceTree = "<group>"; };
+		B30E84E5196BEC6900689D67 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		B30E84E8196BEC6900689D67 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		B30E84E9196BEC6900689D67 /* icon52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon52.png; sourceTree = "<group>"; };
+		B30E84EA196BEC6900689D67 /* Screenshot_2014-04-02-16-06-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot_2014-04-02-16-06-20.png"; sourceTree = "<group>"; };
+		B30E84EB196BEC6900689D67 /* Screenshot_2014-04-02-16-06-43.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot_2014-04-02-16-06-43.png"; sourceTree = "<group>"; };
+		B30E84EC196BEC6900689D67 /* Screenshot_2014-04-02-16-07-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot_2014-04-02-16-07-04.png"; sourceTree = "<group>"; };
+		B30E84ED196BEC6900689D67 /* Screenshot_2014-04-02-16-07-14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot_2014-04-02-16-07-14.png"; sourceTree = "<group>"; };
+		B30E84EE196BEC6900689D67 /* Screenshot_2014-04-02-16-19-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot_2014-04-02-16-19-03.png"; sourceTree = "<group>"; };
+		B30E84EF196BEC6900689D67 /* Screenshot_2014-04-02-16-19-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot_2014-04-02-16-19-13.png"; sourceTree = "<group>"; };
+		B30E84F0196BEC6900689D67 /* Screenshot_2014-04-02-16-58-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot_2014-04-02-16-58-24.png"; sourceTree = "<group>"; };
+		B30E84F1196BEC6900689D67 /* スクリーンショット 2014-04-02 16.52.18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2014-04-02 16.52.18.png"; sourceTree = "<group>"; };
+		B30E84F3196BEC6900689D67 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		B310E0E419382B6100A660A2 /* OneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneCell.h; sourceTree = "<group>"; };
 		B310E0E519382B6100A660A2 /* OneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneCell.m; sourceTree = "<group>"; };
 		B310E0E7193855C800A660A2 /* item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item.png; sourceTree = "<group>"; };
@@ -237,12 +275,6 @@
 		B37CF38219501EAE0064EA15 /* FiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FiveViewController.xib; sourceTree = "<group>"; };
 		B3AA41A8194A867700579A3D /* MyUncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		B3AA41A9194A867700579A3D /* MyUncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUncaughtExceptionHandler.m; sourceTree = "<group>"; };
-		B3AF9CAC1966916900BF585F /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = "openssl-xcode/openssl.xcodeproj"; sourceTree = "<group>"; };
-		B3AF9CB21966917E00BF585F /* sqlcipher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.xcodeproj; path = sqlcipher/sqlcipher.xcodeproj; sourceTree = "<group>"; };
-		B3C3D31419625A8C0035EAE9 /* image0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image0.png; sourceTree = "<group>"; };
-		B3C3D31519625A8C0035EAE9 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
-		B3C3D31619625A8C0035EAE9 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
-		B3C3D31719625A8C0035EAE9 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
 		B3DCDAA6193EE9C200BAD04B /* DBCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCommon.h; sourceTree = "<group>"; };
 		B3DCDAA7193EE9C200BAD04B /* DBCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCommon.m; sourceTree = "<group>"; };
 		B3DCDAA9193EF8D000BAD04B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -386,10 +418,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E419B5196A38380097805C /* libcrypto.a in Frameworks */,
-				B3E419B2196A37F90097805C /* libssl.a in Frameworks */,
-				B3AF9CBE1966925400BF585F /* libsqlcipher.a in Frameworks */,
-				B3AF9CBD1966925000BF585F /* libcrypto.a in Frameworks */,
 				B3DCDAAA193EF8D000BAD04B /* libsqlite3.dylib in Frameworks */,
 				B3E87E5F19357938006F8DF4 /* CoreGraphics.framework in Frameworks */,
 				B3E87E6119357938006F8DF4 /* UIKit.framework in Frameworks */,
@@ -410,10 +438,118 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B30E84CA196BEC6900689D67 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				B30E84CB196BEC6900689D67 /* SMS */,
+				B30E84CC196BEC6900689D67 /* svs */,
+				B30E84CE196BEC6900689D67 /* 在线考试 */,
+				B30E84DE196BEC6900689D67 /* 天天来答题 */,
+				B30E84E6196BEC6900689D67 /* 安卓键鼠 */,
+				B30E84F2196BEC6900689D67 /* 问卷宝 */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		B30E84CB196BEC6900689D67 /* SMS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SMS;
+			sourceTree = "<group>";
+		};
+		B30E84CC196BEC6900689D67 /* svs */ = {
+			isa = PBXGroup;
+			children = (
+				B30E84CD196BEC6900689D67 /* logo.png */,
+			);
+			path = svs;
+			sourceTree = "<group>";
+		};
+		B30E84CE196BEC6900689D67 /* 在线考试 */ = {
+			isa = PBXGroup;
+			children = (
+				B30E84CF196BEC6900689D67 /* icon.png */,
+				B30E84D0196BEC6900689D67 /* iphone5 */,
+			);
+			path = "在线考试";
+			sourceTree = "<group>";
+		};
+		B30E84D0196BEC6900689D67 /* iphone5 */ = {
+			isa = PBXGroup;
+			children = (
+				B30E84D1196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.23”.png */,
+				B30E84D2196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.28”.png */,
+				B30E84D3196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.53”.png */,
+				B30E84D4196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.00”.png */,
+				B30E84D5196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.06”.png */,
+				B30E84D6196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.17”.png */,
+				B30E84D7196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.29”.png */,
+				B30E84D8196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.22”.png */,
+				B30E84D9196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.33”.png */,
+				B30E84DA196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.02”.png */,
+				B30E84DB196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.19”.png */,
+				B30E84DC196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.27”.png */,
+				B30E84DD196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.31”.png */,
+			);
+			path = iphone5;
+			sourceTree = "<group>";
+		};
+		B30E84DE196BEC6900689D67 /* 天天来答题 */ = {
+			isa = PBXGroup;
+			children = (
+				B30E84DF196BEC6900689D67 /* 02-list-UI-01.png */,
+				B30E84E0196BEC6900689D67 /* 03-help-UI.png */,
+				B30E84E1196BEC6900689D67 /* 04-UI.png */,
+				B30E84E2196BEC6900689D67 /* 05-UI.png */,
+				B30E84E3196BEC6900689D67 /* 06-UI.png */,
+				B30E84E4196BEC6900689D67 /* 07-UI.png */,
+				B30E84E5196BEC6900689D67 /* icon@2x.png */,
+			);
+			path = "天天来答题";
+			sourceTree = "<group>";
+		};
+		B30E84E6196BEC6900689D67 /* 安卓键鼠 */ = {
+			isa = PBXGroup;
+			children = (
+				B30E84E7196BEC6900689D67 /* image */,
+			);
+			path = "安卓键鼠";
+			sourceTree = "<group>";
+		};
+		B30E84E7196BEC6900689D67 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				B30E84E8196BEC6900689D67 /* icon.png */,
+				B30E84E9196BEC6900689D67 /* icon52.png */,
+				B30E84EA196BEC6900689D67 /* Screenshot_2014-04-02-16-06-20.png */,
+				B30E84EB196BEC6900689D67 /* Screenshot_2014-04-02-16-06-43.png */,
+				B30E84EC196BEC6900689D67 /* Screenshot_2014-04-02-16-07-04.png */,
+				B30E84ED196BEC6900689D67 /* Screenshot_2014-04-02-16-07-14.png */,
+				B30E84EE196BEC6900689D67 /* Screenshot_2014-04-02-16-19-03.png */,
+				B30E84EF196BEC6900689D67 /* Screenshot_2014-04-02-16-19-13.png */,
+				B30E84F0196BEC6900689D67 /* Screenshot_2014-04-02-16-58-24.png */,
+				B30E84F1196BEC6900689D67 /* スクリーンショット 2014-04-02 16.52.18.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		B30E84F2196BEC6900689D67 /* 问卷宝 */ = {
+			isa = PBXGroup;
+			children = (
+				B30E84F3196BEC6900689D67 /* icon@2x.png */,
+			);
+			path = "问卷宝";
+			sourceTree = "<group>";
+		};
 		B310E0E9193855CE00A660A2 /* image */ = {
 			isa = PBXGroup;
 			children = (
-				B3C3D31319625A8C0035EAE9 /* beautiful_image */,
+				B30E84CA196BEC6900689D67 /* Icons */,
+				B30E84C2196BE50900689D67 /* 111.png */,
+				B30E84C3196BE50900689D67 /* 222.png */,
+				B30E84C4196BE50900689D67 /* 333.png */,
+				B30E84C5196BE50900689D67 /* 444.png */,
 				B3FEFB5B1952C70D0032003D /* 素材合集——32*32 */,
 				B37CF36419501A000064EA15 /* image-tabbar */,
 				B310E0EC1938702900A660A2 /* section_bg.png */,
@@ -501,33 +637,6 @@
 			name = Five;
 			sourceTree = "<group>";
 		};
-		B3AF9CAD1966916900BF585F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B3AF9CB11966916D00BF585F /* libcrypto.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B3AF9CB31966917E00BF585F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B3AF9CB81966917E00BF585F /* libsqlcipher.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B3C3D31319625A8C0035EAE9 /* beautiful_image */ = {
-			isa = PBXGroup;
-			children = (
-				B3C3D31419625A8C0035EAE9 /* image0.png */,
-				B3C3D31519625A8C0035EAE9 /* image1.png */,
-				B3C3D31619625A8C0035EAE9 /* image2.png */,
-				B3C3D31719625A8C0035EAE9 /* image3.png */,
-			);
-			path = beautiful_image;
-			sourceTree = "<group>";
-		};
 		B3DCDAA5193EE8D500BAD04B /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,8 +665,6 @@
 		B3E87E5019357937006F8DF4 = {
 			isa = PBXGroup;
 			children = (
-				B3AF9CB21966917E00BF585F /* sqlcipher.xcodeproj */,
-				B3AF9CAC1966916900BF585F /* openssl.xcodeproj */,
 				B3E87E6219357938006F8DF4 /* WWW */,
 				B3E87E7B19357938006F8DF4 /* WWWTests */,
 				B3E87E5B19357938006F8DF4 /* Frameworks */,
@@ -773,8 +880,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				B3AF9CBC1966923A00BF585F /* PBXTargetDependency */,
-				B3AF9CBA1966923600BF585F /* PBXTargetDependency */,
 			);
 			name = WWW;
 			productName = WWW;
@@ -809,7 +914,7 @@
 				ORGANIZATIONNAME = tci;
 				TargetAttributes = {
 					B3E87E5819357938006F8DF4 = {
-						DevelopmentTeam = V2V795B38D;
+						DevelopmentTeam = 4U2UPSH4F7;
 					};
 					B3E87E7319357938006F8DF4 = {
 						TestTargetID = B3E87E5819357938006F8DF4;
@@ -826,16 +931,6 @@
 			mainGroup = B3E87E5019357937006F8DF4;
 			productRefGroup = B3E87E5A19357938006F8DF4 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = B3AF9CAD1966916900BF585F /* Products */;
-					ProjectRef = B3AF9CAC1966916900BF585F /* openssl.xcodeproj */;
-				},
-				{
-					ProductGroup = B3AF9CB31966917E00BF585F /* Products */;
-					ProjectRef = B3AF9CB21966917E00BF585F /* sqlcipher.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				B3E87E5819357938006F8DF4 /* WWW */,
@@ -844,37 +939,24 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		B3AF9CB11966916D00BF585F /* libcrypto.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libcrypto.a;
-			remoteRef = B3AF9CB01966916D00BF585F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B3AF9CB81966917E00BF585F /* libsqlcipher.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libsqlcipher.a;
-			remoteRef = B3AF9CB71966917E00BF585F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		B3E87E5719357938006F8DF4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B30E84C9196BE50900689D67 /* 444.png in Resources */,
 				B3FEFBCA1952C70D0032003D /* arrow_right.png in Resources */,
 				B3FEFC081952C70D0032003D /* radio-button_off.png in Resources */,
+				B30E8505196BEC6900689D67 /* 04-UI.png in Resources */,
 				B3FEFC0B1952C70D0032003D /* record.png in Resources */,
 				B3FEFBD41952C70D0032003D /* cd_dvd.png in Resources */,
 				B3FEFC261952C70D0032003D /* user_friend.png in Resources */,
 				B3FEFC201952C70D0032003D /* tag_red.png in Resources */,
+				B30E84F9196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.00”.png in Resources */,
 				B3FEFBCB1952C70D0032003D /* arrow_up.png in Resources */,
 				B3FEFBD81952C70D0032003D /* close_delete.png in Resources */,
 				B3FEFBE91952C70D0032003D /* flag_mark_red.png in Resources */,
+				B30E850A196BEC6900689D67 /* icon.png in Resources */,
 				B310E0E8193855C900A660A2 /* item.png in Resources */,
 				B3FEFBD01952C70D0032003D /* bonus.png in Resources */,
 				B3E87E6719357938006F8DF4 /* InfoPlist.strings in Resources */,
@@ -882,38 +964,43 @@
 				B3FEFC0A1952C70D0032003D /* readme.html in Resources */,
 				B3FEFC231952C70D0032003D /* trash_box.png in Resources */,
 				B3FEFC131952C70D0032003D /* shopping_cart.png in Resources */,
-				B3C3D31819625A8D0035EAE9 /* image0.png in Resources */,
 				B310E0ED1938702A00A660A2 /* section_bg.png in Resources */,
+				B30E850B196BEC6900689D67 /* icon52.png in Resources */,
 				B3FEFC021952C70D0032003D /* pie-chart_graph.png in Resources */,
 				B3FEFBC41952C70D0032003D /* arrow_down.png in Resources */,
+				B30E8503196BEC6900689D67 /* 02-list-UI-01.png in Resources */,
+				B30E84C8196BE50900689D67 /* 333.png in Resources */,
 				B3FEFBEE1952C70D0032003D /* help.png in Resources */,
 				B3FEFC2B1952C70D0032003D /* 懒人图库.url in Resources */,
 				B3FEFBE61952C70D0032003D /* favorite_love.png in Resources */,
 				B3FEFC221952C70D0032003D /* time_clock.png in Resources */,
 				B3FEFBD31952C70D0032003D /* calendar.png in Resources */,
-				B3C3D31A19625A8D0035EAE9 /* image2.png in Resources */,
+				B30E84FD196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.22”.png in Resources */,
+				B30E84F4196BEC6900689D67 /* logo.png in Resources */,
 				B310E0F31938816000A660A2 /* TwoViewController.xib in Resources */,
 				B3FEFC151952C70D0032003D /* smartphone_2.png in Resources */,
 				B3FEFBD61952C70D0032003D /* check.png in Resources */,
 				B3FEFBC61952C70D0032003D /* arrow_left-up.png in Resources */,
 				B3FEFC1A1952C70D0032003D /* stop.png in Resources */,
 				B3FEFC121952C70D0032003D /* shield_protect_on.png in Resources */,
+				B30E8507196BEC6900689D67 /* 06-UI.png in Resources */,
 				B3FEFBD21952C70D0032003D /* calculator.png in Resources */,
+				B30E8501196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.27”.png in Resources */,
 				B3FEFBF21952C70D0032003D /* ipod.png in Resources */,
 				B3FEFBDE1952C70D0032003D /* copy.png in Resources */,
 				B3FEFBF91952C70D0032003D /* new_email.png in Resources */,
-				B3C3D31919625A8D0035EAE9 /* image1.png in Resources */,
 				B3FEFBE21952C70D0032003D /* delete_2.png in Resources */,
 				B3FEFC0E1952C70D0032003D /* save_as.png in Resources */,
 				B37CF36F19501A000064EA15 /* bottom.png in Resources */,
 				B3FEFBE31952C70D0032003D /* document_file.png in Resources */,
 				B3FEFC091952C70D0032003D /* radio-button_on.png in Resources */,
+				B30E8513196BEC6900689D67 /* スクリーンショット 2014-04-02 16.52.18.png in Resources */,
 				B3E87E6F19357938006F8DF4 /* Images.xcassets in Resources */,
 				B3FEFBD71952C70D0032003D /* check_2.png in Resources */,
 				B3FEFC281952C70D0032003D /* vote_no.png in Resources */,
 				B3FEFBE41952C70D0032003D /* email.png in Resources */,
+				B30E850E196BEC6900689D67 /* Screenshot_2014-04-02-16-07-04.png in Resources */,
 				B3FEFC061952C70D0032003D /* previous.png in Resources */,
-				B3C3D31B19625A8D0035EAE9 /* image3.png in Resources */,
 				B3FEFBDB1952C70D0032003D /* comment.png in Resources */,
 				B3FEFBC71952C70D0032003D /* arrow_left.png in Resources */,
 				B3FEFC251952C70D0032003D /* unlock.png in Resources */,
@@ -923,32 +1010,48 @@
 				B3FEFC111952C70D0032003D /* shield_protect_off.png in Resources */,
 				B3FEFBF31952C70D0032003D /* key_login.png in Resources */,
 				B37CF37019501A000064EA15 /* tab_0.png in Resources */,
+				B30E8502196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.31”.png in Resources */,
+				B30E8512196BEC6900689D67 /* Screenshot_2014-04-02-16-58-24.png in Resources */,
 				B3FEFBDF1952C70D0032003D /* credit_card.png in Resources */,
 				B3FEFBE11952C70D0032003D /* cut.png in Resources */,
 				B3FEFBDC1952C70D0032003D /* computer.png in Resources */,
 				B3387D861963AF30005A9D79 /* SixViewController.xib in Resources */,
+				B30E84FF196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.02”.png in Resources */,
 				B3FEFBEA1952C70D0032003D /* flag_mark_violet.png in Resources */,
+				B30E8506196BEC6900689D67 /* 05-UI.png in Resources */,
 				B3FEFBF51952C70D0032003D /* minus.png in Resources */,
 				B3FEFC0C1952C70D0032003D /* refresh.png in Resources */,
 				B3FEFC1E1952C70D0032003D /* tag_green.png in Resources */,
+				B30E8510196BEC6900689D67 /* Screenshot_2014-04-02-16-19-03.png in Resources */,
+				B30E850C196BEC6900689D67 /* Screenshot_2014-04-02-16-06-20.png in Resources */,
 				B3FEFBF61952C70D0032003D /* mobile_phone.png in Resources */,
+				B30E850D196BEC6900689D67 /* Screenshot_2014-04-02-16-06-43.png in Resources */,
 				B3FEFBD11952C70D0032003D /* bug.png in Resources */,
 				B3FEFC0F1952C70D0032003D /* save_diskette_floppy_disk.png in Resources */,
+				B30E84FE196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.33”.png in Resources */,
 				B3E18BCC195429F200141B00 /* MyCell.xib in Resources */,
 				B3FEFBFF1952C70D0032003D /* pause.png in Resources */,
 				B3FEFBF41952C70D0032003D /* lock.png in Resources */,
 				B37CF37619501A000064EA15 /* tab_2.png in Resources */,
+				B30E8509196BEC6900689D67 /* icon@2x.png in Resources */,
 				B3FEFBE01952C70D0032003D /* credit_card_back.png in Resources */,
 				B3FEFBF01952C70D0032003D /* home.png in Resources */,
 				B3FEFC161952C70D0032003D /* smartphone_iphone.png in Resources */,
+				B30E8508196BEC6900689D67 /* 07-UI.png in Resources */,
+				B30E850F196BEC6900689D67 /* Screenshot_2014-04-02-16-07-14.png in Resources */,
 				B3FEFC041952C70D0032003D /* plus.png in Resources */,
 				B3FEFC1B1952C70D0032003D /* stop_2.png in Resources */,
+				B30E84FB196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.17”.png in Resources */,
 				B3FEFBCD1952C70D0032003D /* backward.png in Resources */,
+				B30E84FC196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.29”.png in Resources */,
+				B30E84F8196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.53”.png in Resources */,
 				B3FEFBFB1952C70D0032003D /* opened.png in Resources */,
 				B3FEFBFC1952C70D0032003D /* options.png in Resources */,
 				B3FEFC1C1952C70D0032003D /* tag_blue.png in Resources */,
 				B3FEFBF81952C70D0032003D /* network_close.png in Resources */,
 				B3FEFBC81952C70D0032003D /* arrow_right-down.png in Resources */,
+				B30E8500196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.19”.png in Resources */,
+				B30E8514196BEC6900689D67 /* icon@2x.png in Resources */,
 				B3FEFC271952C70D0032003D /* user_woman.png in Resources */,
 				B37CF37319501A000064EA15 /* tab_1.png in Resources */,
 				B3E87E90193579FB006F8DF4 /* OneViewController.xib in Resources */,
@@ -960,7 +1063,9 @@
 				B3FEFBCC1952C70D0032003D /* attention.png in Resources */,
 				B3FEFBDA1952C70D0032003D /* closed.png in Resources */,
 				B3FEFC2A1952C70D0032003D /* wizard.png in Resources */,
+				B30E8511196BEC6900689D67 /* Screenshot_2014-04-02-16-19-13.png in Resources */,
 				B37CF37119501A000064EA15 /* tab_s0.png in Resources */,
+				B30E84F6196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.23”.png in Resources */,
 				B3FEFBFD1952C70D0032003D /* options_2.png in Resources */,
 				B3FEFC1F1952C70D0032003D /* tag_orange.png in Resources */,
 				B3FEFBE81952C70D0032003D /* flag_mark_green.png in Resources */,
@@ -969,15 +1074,19 @@
 				B3FEFC141952C70D0032003D /* shopping_cart_empty.png in Resources */,
 				B3FEFC051952C70D0032003D /* plus_2.png in Resources */,
 				B3FEFBD91952C70D0032003D /* close_delete_2.png in Resources */,
+				B30E84C6196BE50900689D67 /* 111.png in Resources */,
 				B3FEFBF11952C70D0032003D /* information.png in Resources */,
 				B3FEFC191952C70D0032003D /* star_2.png in Resources */,
+				B30E8504196BEC6900689D67 /* 03-help-UI.png in Resources */,
 				B3FEFBED1952C70D0032003D /* friends_group.png in Resources */,
 				B3FEFBC51952C70D0032003D /* arrow_left-down.png in Resources */,
 				B3FEFC101952C70D0032003D /* search_lense.png in Resources */,
 				B3FEFC211952C70D0032003D /* tag_violet.png in Resources */,
 				B3FEFC001952C70D0032003D /* pencil_edit.png in Resources */,
 				B3FEFC181952C70D0032003D /* sound_music-on.png in Resources */,
+				B30E84C7196BE50900689D67 /* 222.png in Resources */,
 				B3FEFC1D1952C70D0032003D /* tag_gray.png in Resources */,
+				B30E84FA196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.06”.png in Resources */,
 				B3FEFBE51952C70D0032003D /* eraser.png in Resources */,
 				B3FEFBEB1952C70D0032003D /* folder.png in Resources */,
 				B3FEFBEF1952C70D0032003D /* help_ring-buoy.png in Resources */,
@@ -986,10 +1095,12 @@
 				B37CF38419501EAE0064EA15 /* FiveViewController.xib in Resources */,
 				B3FEFC011952C70D0032003D /* pie-chart_diagram.png in Resources */,
 				B37CF37219501A000064EA15 /* tab_s1.png in Resources */,
+				B30E84F5196BEC6900689D67 /* icon.png in Resources */,
 				B3FEFBCF1952C70D0032003D /* base.png in Resources */,
 				B3FEFC241952C70D0032003D /* trash_box_2.png in Resources */,
 				B3FEFC291952C70D0032003D /* vote_yes.png in Resources */,
 				B3FEFBF71952C70D0032003D /* network.png in Resources */,
+				B30E84F7196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.28”.png in Resources */,
 				B37CF37719501A000064EA15 /* tab_3.png in Resources */,
 				B3FEFBDD1952C70D0032003D /* computer_monitor.png in Resources */,
 				B3FEFBD51952C70D0032003D /* check-64.png in Resources */,
@@ -1042,16 +1153,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B3AF9CBA1966923600BF585F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = sqlcipher;
-			targetProxy = B3AF9CB91966923600BF585F /* PBXContainerItemProxy */;
-		};
-		B3AF9CBC1966923A00BF585F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = crypto;
-			targetProxy = B3AF9CBB1966923A00BF585F /* PBXContainerItemProxy */;
-		};
 		B3E87E7A19357938006F8DF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B3E87E5819357938006F8DF4 /* WWW */;
@@ -1083,7 +1184,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1096,8 +1197,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Transcosmos Information Creative (China) Co., Ltd.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Transcosmos Information Creative (China) Co., Ltd.";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hao Zhang (5T5763V8FP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hao Zhang (5T5763V8FP)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1113,7 +1214,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos7.1;
@@ -1124,7 +1225,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1137,8 +1238,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Transcosmos Information Creative (China) Co., Ltd.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Transcosmos Information Creative (China) Co., Ltd.";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hao Zhang (5T5763V8FP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hao Zhang (5T5763V8FP)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1148,7 +1249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos7.1;
@@ -1172,10 +1273,11 @@
 					"$(PROJECT_DIR)/openssl-1.0.0e",
 					"$(PROJECT_DIR)/openssl-xcode",
 				);
-				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
+				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos7.1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1196,10 +1298,11 @@
 					"$(PROJECT_DIR)/openssl-1.0.0e",
 					"$(PROJECT_DIR)/openssl-xcode",
 				);
-				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
+				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos7.1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

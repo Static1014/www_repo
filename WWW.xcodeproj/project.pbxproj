@@ -11,39 +11,6 @@
 		B30E84C7196BE50900689D67 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84C3196BE50900689D67 /* 222.png */; };
 		B30E84C8196BE50900689D67 /* 333.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84C4196BE50900689D67 /* 333.png */; };
 		B30E84C9196BE50900689D67 /* 444.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84C5196BE50900689D67 /* 444.png */; };
-		B30E84F4196BEC6900689D67 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84CD196BEC6900689D67 /* logo.png */; };
-		B30E84F5196BEC6900689D67 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84CF196BEC6900689D67 /* icon.png */; };
-		B30E84F6196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.23”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D1196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.23”.png */; };
-		B30E84F7196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.28”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D2196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.28”.png */; };
-		B30E84F8196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.53”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D3196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.53”.png */; };
-		B30E84F9196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.00”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D4196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.00”.png */; };
-		B30E84FA196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.06”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D5196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.06”.png */; };
-		B30E84FB196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.17”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D6196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.17”.png */; };
-		B30E84FC196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.29”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D7196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.29”.png */; };
-		B30E84FD196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.22”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D8196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.22”.png */; };
-		B30E84FE196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.33”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84D9196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.33”.png */; };
-		B30E84FF196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.02”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84DA196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.02”.png */; };
-		B30E8500196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.19”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84DB196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.19”.png */; };
-		B30E8501196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.27”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84DC196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.27”.png */; };
-		B30E8502196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.31”.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84DD196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.31”.png */; };
-		B30E8503196BEC6900689D67 /* 02-list-UI-01.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84DF196BEC6900689D67 /* 02-list-UI-01.png */; };
-		B30E8504196BEC6900689D67 /* 03-help-UI.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E0196BEC6900689D67 /* 03-help-UI.png */; };
-		B30E8505196BEC6900689D67 /* 04-UI.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E1196BEC6900689D67 /* 04-UI.png */; };
-		B30E8506196BEC6900689D67 /* 05-UI.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E2196BEC6900689D67 /* 05-UI.png */; };
-		B30E8507196BEC6900689D67 /* 06-UI.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E3196BEC6900689D67 /* 06-UI.png */; };
-		B30E8508196BEC6900689D67 /* 07-UI.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E4196BEC6900689D67 /* 07-UI.png */; };
-		B30E8509196BEC6900689D67 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E5196BEC6900689D67 /* icon@2x.png */; };
-		B30E850A196BEC6900689D67 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E8196BEC6900689D67 /* icon.png */; };
-		B30E850B196BEC6900689D67 /* icon52.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84E9196BEC6900689D67 /* icon52.png */; };
-		B30E850C196BEC6900689D67 /* Screenshot_2014-04-02-16-06-20.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84EA196BEC6900689D67 /* Screenshot_2014-04-02-16-06-20.png */; };
-		B30E850D196BEC6900689D67 /* Screenshot_2014-04-02-16-06-43.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84EB196BEC6900689D67 /* Screenshot_2014-04-02-16-06-43.png */; };
-		B30E850E196BEC6900689D67 /* Screenshot_2014-04-02-16-07-04.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84EC196BEC6900689D67 /* Screenshot_2014-04-02-16-07-04.png */; };
-		B30E850F196BEC6900689D67 /* Screenshot_2014-04-02-16-07-14.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84ED196BEC6900689D67 /* Screenshot_2014-04-02-16-07-14.png */; };
-		B30E8510196BEC6900689D67 /* Screenshot_2014-04-02-16-19-03.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84EE196BEC6900689D67 /* Screenshot_2014-04-02-16-19-03.png */; };
-		B30E8511196BEC6900689D67 /* Screenshot_2014-04-02-16-19-13.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84EF196BEC6900689D67 /* Screenshot_2014-04-02-16-19-13.png */; };
-		B30E8512196BEC6900689D67 /* Screenshot_2014-04-02-16-58-24.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84F0196BEC6900689D67 /* Screenshot_2014-04-02-16-58-24.png */; };
-		B30E8513196BEC6900689D67 /* スクリーンショット 2014-04-02 16.52.18.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84F1196BEC6900689D67 /* スクリーンショット 2014-04-02 16.52.18.png */; };
-		B30E8514196BEC6900689D67 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E84F3196BEC6900689D67 /* icon@2x.png */; };
 		B310E0E619382B6100A660A2 /* OneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B310E0E519382B6100A660A2 /* OneCell.m */; };
 		B310E0E8193855C900A660A2 /* item.png in Resources */ = {isa = PBXBuildFile; fileRef = B310E0E7193855C800A660A2 /* item.png */; };
 		B310E0ED1938702A00A660A2 /* section_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B310E0EC1938702900A660A2 /* section_bg.png */; };
@@ -210,39 +177,6 @@
 		B30E84C3196BE50900689D67 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
 		B30E84C4196BE50900689D67 /* 333.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 333.png; sourceTree = "<group>"; };
 		B30E84C5196BE50900689D67 /* 444.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 444.png; sourceTree = "<group>"; };
-		B30E84CD196BEC6900689D67 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		B30E84CF196BEC6900689D67 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		B30E84D1196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.23”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.07.23”.png"; sourceTree = "<group>"; };
-		B30E84D2196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.28”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.07.28”.png"; sourceTree = "<group>"; };
-		B30E84D3196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.53”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.07.53”.png"; sourceTree = "<group>"; };
-		B30E84D4196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.00”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.08.00”.png"; sourceTree = "<group>"; };
-		B30E84D5196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.06”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.08.06”.png"; sourceTree = "<group>"; };
-		B30E84D6196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.17”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.08.17”.png"; sourceTree = "<group>"; };
-		B30E84D7196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.29”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.08.29”.png"; sourceTree = "<group>"; };
-		B30E84D8196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.22”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.09.22”.png"; sourceTree = "<group>"; };
-		B30E84D9196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.33”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.09.33”.png"; sourceTree = "<group>"; };
-		B30E84DA196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.02”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.10.02”.png"; sourceTree = "<group>"; };
-		B30E84DB196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.19”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.10.19”.png"; sourceTree = "<group>"; };
-		B30E84DC196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.27”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.10.27”.png"; sourceTree = "<group>"; };
-		B30E84DD196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.31”.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS 模拟器屏幕快照“2014年6月12日 9.10.31”.png"; sourceTree = "<group>"; };
-		B30E84DF196BEC6900689D67 /* 02-list-UI-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-list-UI-01.png"; sourceTree = "<group>"; };
-		B30E84E0196BEC6900689D67 /* 03-help-UI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "03-help-UI.png"; sourceTree = "<group>"; };
-		B30E84E1196BEC6900689D67 /* 04-UI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "04-UI.png"; sourceTree = "<group>"; };
-		B30E84E2196BEC6900689D67 /* 05-UI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "05-UI.png"; sourceTree = "<group>"; };
-		B30E84E3196BEC6900689D67 /* 06-UI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06-UI.png"; sourceTree = "<group>"; };
-		B30E84E4196BEC6900689D67 /* 07-UI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "07-UI.png"; sourceTree = "<group>"; };
-		B30E84E5196BEC6900689D67 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		B30E84E8196BEC6900689D67 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		B30E84E9196BEC6900689D67 /* icon52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon52.png; sourceTree = "<group>"; };
-		B30E84EA196BEC6900689D67 /* Screenshot_2014-04-02-16-06-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot_2014-04-02-16-06-20.png"; sourceTree = "<group>"; };
-		B30E84EB196BEC6900689D67 /* Screenshot_2014-04-02-16-06-43.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot_2014-04-02-16-06-43.png"; sourceTree = "<group>"; };
-		B30E84EC196BEC6900689D67 /* Screenshot_2014-04-02-16-07-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot_2014-04-02-16-07-04.png"; sourceTree = "<group>"; };
-		B30E84ED196BEC6900689D67 /* Screenshot_2014-04-02-16-07-14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot_2014-04-02-16-07-14.png"; sourceTree = "<group>"; };
-		B30E84EE196BEC6900689D67 /* Screenshot_2014-04-02-16-19-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot_2014-04-02-16-19-03.png"; sourceTree = "<group>"; };
-		B30E84EF196BEC6900689D67 /* Screenshot_2014-04-02-16-19-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot_2014-04-02-16-19-13.png"; sourceTree = "<group>"; };
-		B30E84F0196BEC6900689D67 /* Screenshot_2014-04-02-16-58-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot_2014-04-02-16-58-24.png"; sourceTree = "<group>"; };
-		B30E84F1196BEC6900689D67 /* スクリーンショット 2014-04-02 16.52.18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2014-04-02 16.52.18.png"; sourceTree = "<group>"; };
-		B30E84F3196BEC6900689D67 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		B310E0E419382B6100A660A2 /* OneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneCell.h; sourceTree = "<group>"; };
 		B310E0E519382B6100A660A2 /* OneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneCell.m; sourceTree = "<group>"; };
 		B310E0E7193855C800A660A2 /* item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item.png; sourceTree = "<group>"; };
@@ -438,114 +372,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B30E84CA196BEC6900689D67 /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				B30E84CB196BEC6900689D67 /* SMS */,
-				B30E84CC196BEC6900689D67 /* svs */,
-				B30E84CE196BEC6900689D67 /* 在线考试 */,
-				B30E84DE196BEC6900689D67 /* 天天来答题 */,
-				B30E84E6196BEC6900689D67 /* 安卓键鼠 */,
-				B30E84F2196BEC6900689D67 /* 问卷宝 */,
-			);
-			path = Icons;
-			sourceTree = "<group>";
-		};
-		B30E84CB196BEC6900689D67 /* SMS */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SMS;
-			sourceTree = "<group>";
-		};
-		B30E84CC196BEC6900689D67 /* svs */ = {
-			isa = PBXGroup;
-			children = (
-				B30E84CD196BEC6900689D67 /* logo.png */,
-			);
-			path = svs;
-			sourceTree = "<group>";
-		};
-		B30E84CE196BEC6900689D67 /* 在线考试 */ = {
-			isa = PBXGroup;
-			children = (
-				B30E84CF196BEC6900689D67 /* icon.png */,
-				B30E84D0196BEC6900689D67 /* iphone5 */,
-			);
-			path = "在线考试";
-			sourceTree = "<group>";
-		};
-		B30E84D0196BEC6900689D67 /* iphone5 */ = {
-			isa = PBXGroup;
-			children = (
-				B30E84D1196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.23”.png */,
-				B30E84D2196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.28”.png */,
-				B30E84D3196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.53”.png */,
-				B30E84D4196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.00”.png */,
-				B30E84D5196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.06”.png */,
-				B30E84D6196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.17”.png */,
-				B30E84D7196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.29”.png */,
-				B30E84D8196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.22”.png */,
-				B30E84D9196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.33”.png */,
-				B30E84DA196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.02”.png */,
-				B30E84DB196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.19”.png */,
-				B30E84DC196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.27”.png */,
-				B30E84DD196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.31”.png */,
-			);
-			path = iphone5;
-			sourceTree = "<group>";
-		};
-		B30E84DE196BEC6900689D67 /* 天天来答题 */ = {
-			isa = PBXGroup;
-			children = (
-				B30E84DF196BEC6900689D67 /* 02-list-UI-01.png */,
-				B30E84E0196BEC6900689D67 /* 03-help-UI.png */,
-				B30E84E1196BEC6900689D67 /* 04-UI.png */,
-				B30E84E2196BEC6900689D67 /* 05-UI.png */,
-				B30E84E3196BEC6900689D67 /* 06-UI.png */,
-				B30E84E4196BEC6900689D67 /* 07-UI.png */,
-				B30E84E5196BEC6900689D67 /* icon@2x.png */,
-			);
-			path = "天天来答题";
-			sourceTree = "<group>";
-		};
-		B30E84E6196BEC6900689D67 /* 安卓键鼠 */ = {
-			isa = PBXGroup;
-			children = (
-				B30E84E7196BEC6900689D67 /* image */,
-			);
-			path = "安卓键鼠";
-			sourceTree = "<group>";
-		};
-		B30E84E7196BEC6900689D67 /* image */ = {
-			isa = PBXGroup;
-			children = (
-				B30E84E8196BEC6900689D67 /* icon.png */,
-				B30E84E9196BEC6900689D67 /* icon52.png */,
-				B30E84EA196BEC6900689D67 /* Screenshot_2014-04-02-16-06-20.png */,
-				B30E84EB196BEC6900689D67 /* Screenshot_2014-04-02-16-06-43.png */,
-				B30E84EC196BEC6900689D67 /* Screenshot_2014-04-02-16-07-04.png */,
-				B30E84ED196BEC6900689D67 /* Screenshot_2014-04-02-16-07-14.png */,
-				B30E84EE196BEC6900689D67 /* Screenshot_2014-04-02-16-19-03.png */,
-				B30E84EF196BEC6900689D67 /* Screenshot_2014-04-02-16-19-13.png */,
-				B30E84F0196BEC6900689D67 /* Screenshot_2014-04-02-16-58-24.png */,
-				B30E84F1196BEC6900689D67 /* スクリーンショット 2014-04-02 16.52.18.png */,
-			);
-			path = image;
-			sourceTree = "<group>";
-		};
-		B30E84F2196BEC6900689D67 /* 问卷宝 */ = {
-			isa = PBXGroup;
-			children = (
-				B30E84F3196BEC6900689D67 /* icon@2x.png */,
-			);
-			path = "问卷宝";
-			sourceTree = "<group>";
-		};
 		B310E0E9193855CE00A660A2 /* image */ = {
 			isa = PBXGroup;
 			children = (
-				B30E84CA196BEC6900689D67 /* Icons */,
 				B30E84C2196BE50900689D67 /* 111.png */,
 				B30E84C3196BE50900689D67 /* 222.png */,
 				B30E84C4196BE50900689D67 /* 333.png */,
@@ -947,16 +776,13 @@
 				B30E84C9196BE50900689D67 /* 444.png in Resources */,
 				B3FEFBCA1952C70D0032003D /* arrow_right.png in Resources */,
 				B3FEFC081952C70D0032003D /* radio-button_off.png in Resources */,
-				B30E8505196BEC6900689D67 /* 04-UI.png in Resources */,
 				B3FEFC0B1952C70D0032003D /* record.png in Resources */,
 				B3FEFBD41952C70D0032003D /* cd_dvd.png in Resources */,
 				B3FEFC261952C70D0032003D /* user_friend.png in Resources */,
 				B3FEFC201952C70D0032003D /* tag_red.png in Resources */,
-				B30E84F9196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.00”.png in Resources */,
 				B3FEFBCB1952C70D0032003D /* arrow_up.png in Resources */,
 				B3FEFBD81952C70D0032003D /* close_delete.png in Resources */,
 				B3FEFBE91952C70D0032003D /* flag_mark_red.png in Resources */,
-				B30E850A196BEC6900689D67 /* icon.png in Resources */,
 				B310E0E8193855C900A660A2 /* item.png in Resources */,
 				B3FEFBD01952C70D0032003D /* bonus.png in Resources */,
 				B3E87E6719357938006F8DF4 /* InfoPlist.strings in Resources */,
@@ -965,27 +791,21 @@
 				B3FEFC231952C70D0032003D /* trash_box.png in Resources */,
 				B3FEFC131952C70D0032003D /* shopping_cart.png in Resources */,
 				B310E0ED1938702A00A660A2 /* section_bg.png in Resources */,
-				B30E850B196BEC6900689D67 /* icon52.png in Resources */,
 				B3FEFC021952C70D0032003D /* pie-chart_graph.png in Resources */,
 				B3FEFBC41952C70D0032003D /* arrow_down.png in Resources */,
-				B30E8503196BEC6900689D67 /* 02-list-UI-01.png in Resources */,
 				B30E84C8196BE50900689D67 /* 333.png in Resources */,
 				B3FEFBEE1952C70D0032003D /* help.png in Resources */,
 				B3FEFC2B1952C70D0032003D /* 懒人图库.url in Resources */,
 				B3FEFBE61952C70D0032003D /* favorite_love.png in Resources */,
 				B3FEFC221952C70D0032003D /* time_clock.png in Resources */,
 				B3FEFBD31952C70D0032003D /* calendar.png in Resources */,
-				B30E84FD196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.22”.png in Resources */,
-				B30E84F4196BEC6900689D67 /* logo.png in Resources */,
 				B310E0F31938816000A660A2 /* TwoViewController.xib in Resources */,
 				B3FEFC151952C70D0032003D /* smartphone_2.png in Resources */,
 				B3FEFBD61952C70D0032003D /* check.png in Resources */,
 				B3FEFBC61952C70D0032003D /* arrow_left-up.png in Resources */,
 				B3FEFC1A1952C70D0032003D /* stop.png in Resources */,
 				B3FEFC121952C70D0032003D /* shield_protect_on.png in Resources */,
-				B30E8507196BEC6900689D67 /* 06-UI.png in Resources */,
 				B3FEFBD21952C70D0032003D /* calculator.png in Resources */,
-				B30E8501196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.27”.png in Resources */,
 				B3FEFBF21952C70D0032003D /* ipod.png in Resources */,
 				B3FEFBDE1952C70D0032003D /* copy.png in Resources */,
 				B3FEFBF91952C70D0032003D /* new_email.png in Resources */,
@@ -994,12 +814,10 @@
 				B37CF36F19501A000064EA15 /* bottom.png in Resources */,
 				B3FEFBE31952C70D0032003D /* document_file.png in Resources */,
 				B3FEFC091952C70D0032003D /* radio-button_on.png in Resources */,
-				B30E8513196BEC6900689D67 /* スクリーンショット 2014-04-02 16.52.18.png in Resources */,
 				B3E87E6F19357938006F8DF4 /* Images.xcassets in Resources */,
 				B3FEFBD71952C70D0032003D /* check_2.png in Resources */,
 				B3FEFC281952C70D0032003D /* vote_no.png in Resources */,
 				B3FEFBE41952C70D0032003D /* email.png in Resources */,
-				B30E850E196BEC6900689D67 /* Screenshot_2014-04-02-16-07-04.png in Resources */,
 				B3FEFC061952C70D0032003D /* previous.png in Resources */,
 				B3FEFBDB1952C70D0032003D /* comment.png in Resources */,
 				B3FEFBC71952C70D0032003D /* arrow_left.png in Resources */,
@@ -1010,48 +828,32 @@
 				B3FEFC111952C70D0032003D /* shield_protect_off.png in Resources */,
 				B3FEFBF31952C70D0032003D /* key_login.png in Resources */,
 				B37CF37019501A000064EA15 /* tab_0.png in Resources */,
-				B30E8502196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.31”.png in Resources */,
-				B30E8512196BEC6900689D67 /* Screenshot_2014-04-02-16-58-24.png in Resources */,
 				B3FEFBDF1952C70D0032003D /* credit_card.png in Resources */,
 				B3FEFBE11952C70D0032003D /* cut.png in Resources */,
 				B3FEFBDC1952C70D0032003D /* computer.png in Resources */,
 				B3387D861963AF30005A9D79 /* SixViewController.xib in Resources */,
-				B30E84FF196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.02”.png in Resources */,
 				B3FEFBEA1952C70D0032003D /* flag_mark_violet.png in Resources */,
-				B30E8506196BEC6900689D67 /* 05-UI.png in Resources */,
 				B3FEFBF51952C70D0032003D /* minus.png in Resources */,
 				B3FEFC0C1952C70D0032003D /* refresh.png in Resources */,
 				B3FEFC1E1952C70D0032003D /* tag_green.png in Resources */,
-				B30E8510196BEC6900689D67 /* Screenshot_2014-04-02-16-19-03.png in Resources */,
-				B30E850C196BEC6900689D67 /* Screenshot_2014-04-02-16-06-20.png in Resources */,
 				B3FEFBF61952C70D0032003D /* mobile_phone.png in Resources */,
-				B30E850D196BEC6900689D67 /* Screenshot_2014-04-02-16-06-43.png in Resources */,
 				B3FEFBD11952C70D0032003D /* bug.png in Resources */,
 				B3FEFC0F1952C70D0032003D /* save_diskette_floppy_disk.png in Resources */,
-				B30E84FE196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.09.33”.png in Resources */,
 				B3E18BCC195429F200141B00 /* MyCell.xib in Resources */,
 				B3FEFBFF1952C70D0032003D /* pause.png in Resources */,
 				B3FEFBF41952C70D0032003D /* lock.png in Resources */,
 				B37CF37619501A000064EA15 /* tab_2.png in Resources */,
-				B30E8509196BEC6900689D67 /* icon@2x.png in Resources */,
 				B3FEFBE01952C70D0032003D /* credit_card_back.png in Resources */,
 				B3FEFBF01952C70D0032003D /* home.png in Resources */,
 				B3FEFC161952C70D0032003D /* smartphone_iphone.png in Resources */,
-				B30E8508196BEC6900689D67 /* 07-UI.png in Resources */,
-				B30E850F196BEC6900689D67 /* Screenshot_2014-04-02-16-07-14.png in Resources */,
 				B3FEFC041952C70D0032003D /* plus.png in Resources */,
 				B3FEFC1B1952C70D0032003D /* stop_2.png in Resources */,
-				B30E84FB196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.17”.png in Resources */,
 				B3FEFBCD1952C70D0032003D /* backward.png in Resources */,
-				B30E84FC196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.29”.png in Resources */,
-				B30E84F8196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.53”.png in Resources */,
 				B3FEFBFB1952C70D0032003D /* opened.png in Resources */,
 				B3FEFBFC1952C70D0032003D /* options.png in Resources */,
 				B3FEFC1C1952C70D0032003D /* tag_blue.png in Resources */,
 				B3FEFBF81952C70D0032003D /* network_close.png in Resources */,
 				B3FEFBC81952C70D0032003D /* arrow_right-down.png in Resources */,
-				B30E8500196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.10.19”.png in Resources */,
-				B30E8514196BEC6900689D67 /* icon@2x.png in Resources */,
 				B3FEFC271952C70D0032003D /* user_woman.png in Resources */,
 				B37CF37319501A000064EA15 /* tab_1.png in Resources */,
 				B3E87E90193579FB006F8DF4 /* OneViewController.xib in Resources */,
@@ -1063,9 +865,7 @@
 				B3FEFBCC1952C70D0032003D /* attention.png in Resources */,
 				B3FEFBDA1952C70D0032003D /* closed.png in Resources */,
 				B3FEFC2A1952C70D0032003D /* wizard.png in Resources */,
-				B30E8511196BEC6900689D67 /* Screenshot_2014-04-02-16-19-13.png in Resources */,
 				B37CF37119501A000064EA15 /* tab_s0.png in Resources */,
-				B30E84F6196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.23”.png in Resources */,
 				B3FEFBFD1952C70D0032003D /* options_2.png in Resources */,
 				B3FEFC1F1952C70D0032003D /* tag_orange.png in Resources */,
 				B3FEFBE81952C70D0032003D /* flag_mark_green.png in Resources */,
@@ -1077,7 +877,6 @@
 				B30E84C6196BE50900689D67 /* 111.png in Resources */,
 				B3FEFBF11952C70D0032003D /* information.png in Resources */,
 				B3FEFC191952C70D0032003D /* star_2.png in Resources */,
-				B30E8504196BEC6900689D67 /* 03-help-UI.png in Resources */,
 				B3FEFBED1952C70D0032003D /* friends_group.png in Resources */,
 				B3FEFBC51952C70D0032003D /* arrow_left-down.png in Resources */,
 				B3FEFC101952C70D0032003D /* search_lense.png in Resources */,
@@ -1086,7 +885,6 @@
 				B3FEFC181952C70D0032003D /* sound_music-on.png in Resources */,
 				B30E84C7196BE50900689D67 /* 222.png in Resources */,
 				B3FEFC1D1952C70D0032003D /* tag_gray.png in Resources */,
-				B30E84FA196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.08.06”.png in Resources */,
 				B3FEFBE51952C70D0032003D /* eraser.png in Resources */,
 				B3FEFBEB1952C70D0032003D /* folder.png in Resources */,
 				B3FEFBEF1952C70D0032003D /* help_ring-buoy.png in Resources */,
@@ -1095,12 +893,10 @@
 				B37CF38419501EAE0064EA15 /* FiveViewController.xib in Resources */,
 				B3FEFC011952C70D0032003D /* pie-chart_diagram.png in Resources */,
 				B37CF37219501A000064EA15 /* tab_s1.png in Resources */,
-				B30E84F5196BEC6900689D67 /* icon.png in Resources */,
 				B3FEFBCF1952C70D0032003D /* base.png in Resources */,
 				B3FEFC241952C70D0032003D /* trash_box_2.png in Resources */,
 				B3FEFC291952C70D0032003D /* vote_yes.png in Resources */,
 				B3FEFBF71952C70D0032003D /* network.png in Resources */,
-				B30E84F7196BEC6900689D67 /* iOS 模拟器屏幕快照“2014年6月12日 9.07.28”.png in Resources */,
 				B37CF37719501A000064EA15 /* tab_3.png in Resources */,
 				B3FEFBDD1952C70D0032003D /* computer_monitor.png in Resources */,
 				B3FEFBD51952C70D0032003D /* check-64.png in Resources */,
@@ -1268,6 +1064,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWW/WWW-Prefix.pch";
 				INFOPLIST_FILE = "WWW/WWW-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/openssl-1.0.0e",
@@ -1293,6 +1090,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWW/WWW-Prefix.pch";
 				INFOPLIST_FILE = "WWW/WWW-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/openssl-1.0.0e",

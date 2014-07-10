@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FourViewController : UIViewController<UIScrollViewDelegate>
+@interface FourViewController : UIViewController
 
-@property (retain, nonatomic) IBOutlet UIScrollView *pageScrollView;
-@property (retain, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (retain, nonatomic) IBOutlet UIView *groupView;
 
-- (IBAction)pageValueChanged:(id)sender;
+- (IBAction)clickBegin:(id)sender;
 @end

@@ -46,7 +46,12 @@
     _lable.numberOfLines = 10;
 
     CGRect frame = [self frame];
-    CGSize lableSize = [_lable.text sizeWithFont:_lable.font constrainedToSize:CGSizeMake(240, 300) lineBreakMode:NSLineBreakByWordWrapping];
+    CGSize lableSize;
+    if (IOS_VERSION < 7) {
+        lableSize = [_lable.text sizeWithFont:_lable.font constrainedToSize:CGSizeMake(240, 300) lineBreakMode:NSLineBreakByWordWrapping];
+    } else {
+        lableSize = [_lable.text boundingRectWithSize:CGSizeMake(240, 300) options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:14]} context:nil].size;
+    }
     if (lableSize.height + 10 > 50) {
         frame.size.height = lableSize.height + 10;
         _lable.frame = CGRectMake(60, 5, 240, lableSize.height);

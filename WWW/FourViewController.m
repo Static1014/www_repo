@@ -14,6 +14,8 @@
     BOOL isShow;
 
     UILabel *toastLable;
+    int clickTime;
+    int toastTime;
 }
 
 @end
@@ -60,8 +62,7 @@
 }
 
 - (void)clickBtn:(UIButton*)btn {
-    NSLog(@"-----%ld",btn.tag);
-    [self toast:[NSString stringWithFormat:@"Button's tag is %ld",btn.tag] duration:2 parentView:_groupView center:CGPointMake(_groupView.center.x, _groupView.center.y + 20)];
+    [self toast:[NSString stringWithFormat:@"Button's tag is %d",btn.tag] duration:2 parentView:_groupView center:CGPointMake(_groupView.center.x, _groupView.center.y + SCREEN_SIZE.size.height/3)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,6 +77,7 @@
     [btn4 release];
     [btn5 release];
     [_groupView release];
+    [toastLable release];
     [super dealloc];
 }
 
@@ -142,23 +144,38 @@
 }
 
 - (void)toast:(NSString*)msg duration:(CGFloat)time parentView:(UIView*)parent center:(CGPoint)center {
-    CGSize widthSize = CGSizeMake(300, 0);
-//    CGSize finalSize = [msg sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:widthSize lineBreakMode:NSLineBreakByWordWrapping];
-    CGSize finalSize = [msg boundingRectWithSize:widthSize options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:13]} context:nil].size;
+    if (toastLable != nil) {
+        [toastLable removeFromSuperview];
+    }
 
-    toastLable = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, finalSize.width, finalSize.height + 10)];
+    CGSize textSize;
+    if (IOS_VERSION < 7) {
+        textSize = [msg sizeWithFont:[UIFont systemFontOfSize:16] constrainedToSize:CGSizeMake(240, 0) lineBreakMode:NSLineBreakByWordWrapping];
+    } else {
+        textSize = [msg boundingRectWithSize:CGSizeMake(240, 0) options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:16]} context:nil].size;
+    }
+
+    toastLable = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, textSize.width+20, textSize.height + 12)];
     toastLable.text = msg;
+    toastLable.textAlignment = NSTextAlignmentCenter;
+    toastLable.font = [UIFont systemFontOfSize:16];
     toastLable.textColor = [UIColor whiteColor];
-    toastLable.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7];
+    toastLable.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
     [toastLable.layer setCornerRadius:10];
     [toastLable setCenter:center];
 
     [parent addSubview:toastLable];
 
+    clickTime = (int)[[NSDate date] timeIntervalSince1970];
+    toastTime = time;
     [NSTimer scheduledTimerWithTimeInterval:time target:self selector:@selector(toastTimeOver) userInfo:nil repeats:NO];
 }
 
 - (void)toastTimeOver {
-    [toastLable removeFromSuperview];
+    int overTime = (int)[[NSDate date] timeIntervalSince1970];
+    if (overTime - clickTime == toastTime) {
+        [toastLable removeFromSuperview];
+    }
 }
+
 @end

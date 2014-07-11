@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #define IOS_VERSION [[[UIDevice currentDevice]systemVersion]floatValue]
-
+#define SCREEN_SIZE [[UIScreen mainScreen]bounds]
 #define IPHONE_5 [UIScreen instancesRespondToSelector:@selector(currentMode)]?CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen]currentMode].size):NO
 
 @interface BusinessUtil : NSObject

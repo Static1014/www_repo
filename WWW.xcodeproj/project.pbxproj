@@ -1065,11 +1065,7 @@
 				GCC_PREFIX_HEADER = "WWW/WWW-Prefix.pch";
 				INFOPLIST_FILE = "WWW/WWW-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/openssl-1.0.0e",
-					"$(PROJECT_DIR)/openssl-xcode",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1091,11 +1087,7 @@
 				GCC_PREFIX_HEADER = "WWW/WWW-Prefix.pch";
 				INFOPLIST_FILE = "WWW/WWW-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/openssl-1.0.0e",
-					"$(PROJECT_DIR)/openssl-xcode",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

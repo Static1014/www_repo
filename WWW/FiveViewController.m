@@ -140,33 +140,23 @@
     CGFloat pageWidth=self.myScrollView.frame.size.width;
     CGFloat pageHeigth=self.myScrollView.frame.size.height;
     int currentPage=floor((self.myScrollView.contentOffset.x-pageWidth/2)/pageWidth)+1;
-//    NSLog(@"the current offset==%f",self.myScrollView.contentOffset.x);
-//    NSLog(@"the current page==%d",currentPage);
 
     if (currentPage==0) {
         [self.myScrollView scrollRectToVisible:CGRectMake(pageWidth*imageArray.count, 0, pageWidth, pageHeigth) animated:NO];
         self.pageControl.currentPage=imageArray.count-1;
-//        NSLog(@"pageControl currentPage==%d",self.pageControl.currentPage);
-//        NSLog(@"the last image");
         return;
     }else  if(currentPage==[imageArray count]+1){
         [self.myScrollView scrollRectToVisible:CGRectMake(pageWidth, 0, pageWidth, pageHeigth) animated:NO];
         self.pageControl.currentPage=0;
-//        NSLog(@"pageControl currentPage==%d",self.pageControl.currentPage);
-//        NSLog(@"the first image");
         return;
     }
     self.pageControl.currentPage=currentPage-1;
-//    NSLog(@"pageControl currentPage==%d",self.pageControl.currentPage);
-
 }
 -(IBAction)pageTurn:(UIPageControl *)sender
 {
     int pageNum=pageControl.currentPage;
     CGSize viewSize=self.myScrollView.frame.size;
     [self.myScrollView setContentOffset:CGPointMake((pageNum+1)*viewSize.width, 0)];
-//    NSLog(@"myscrollView.contentOffSet.x==%f",myScrollView.contentOffset.x);
-//    NSLog(@"pageControl currentPage==%d",self.pageControl.currentPage);
     [myTimer invalidate];
 }
 

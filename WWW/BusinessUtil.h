@@ -12,6 +12,8 @@
 #define SCREEN_SIZE [[UIScreen mainScreen]bounds]
 #define IPHONE_5 [UIScreen instancesRespondToSelector:@selector(currentMode)]?CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen]currentMode].size):NO
 
+#define rotateDegree(x) M_PI * (x) / 180.0
+
 @interface BusinessUtil : NSObject
 
 + (UIImage*)scaleImageWithImageSimple:(UIImage*)image scaledToSize:(CGSize)newSize;

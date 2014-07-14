@@ -35,6 +35,8 @@
     [super viewDidLoad];
 
     [self initButtons];
+
+    [self initGesture];
 }
 
 - (void)initButtons {
@@ -81,30 +83,108 @@
     [super dealloc];
 }
 
+- (void)initGesture {
+    UISwipeGestureRecognizer *recognizer;
+
+    recognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleGesture:)];
+    [recognizer setDirection:UISwipeGestureRecognizerDirectionLeft];
+    [_groupView addGestureRecognizer:recognizer];
+    [recognizer release];
+
+    recognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleGesture:)];
+    [recognizer setDirection:UISwipeGestureRecognizerDirectionRight];
+    [_groupView addGestureRecognizer:recognizer];
+    [recognizer release];
+
+    recognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleGesture:)];
+    [recognizer setDirection:UISwipeGestureRecognizerDirectionUp];
+    [_groupView addGestureRecognizer:recognizer];
+    [recognizer release];
+
+    recognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleGesture:)];
+    [recognizer setDirection:UISwipeGestureRecognizerDirectionDown];
+    [_groupView addGestureRecognizer:recognizer];
+    [recognizer release];
+}
+
+- (void)handleGesture:(UISwipeGestureRecognizer *)recognizer {
+    switch (recognizer.direction) {
+        case UISwipeGestureRecognizerDirectionLeft:
+            if (!isShow) {
+                [self showMenu];
+            }
+            break;
+
+        case UISwipeGestureRecognizerDirectionRight:
+            if (isShow) {
+                [self hideMenu];
+            }
+            break;
+
+        case UISwipeGestureRecognizerDirectionUp:
+            NSLog(@"UISwipeGestureRecognizerDirectionUp");
+            break;
+
+        case UISwipeGestureRecognizerDirectionDown:
+            NSLog(@"UISwipeGestureRecognizerDirectionDown");
+            break;
+
+        default:
+            NSLog(@"default");
+            break;
+    }
+}
+
 - (IBAction)clickBegin:(id)sender {
     if (isShow) {
-        isShow = NO;
-
-        btn1.hidden = YES;
-        btn2.hidden = YES;
-        btn3.hidden = YES;
-        btn4.hidden = YES;
-        btn5.hidden = YES;
-        [btn1 setCenter:CGPointMake(-16, 360)];
-        [btn2 setCenter:CGPointMake(-16, 360)];
-        [btn3 setCenter:CGPointMake(-16, 360)];
-        [btn4 setCenter:CGPointMake(-16, 360)];
-        [btn5 setCenter:CGPointMake(-16, 360)];
+        [self hideMenu];
     } else {
-        isShow = YES;
-
-        [self actionAnimation:btn1 toPoint:CGPointMake(200, 95)  controlPoint:CGPointMake(240, 300)];
-        [self actionAnimation:btn2 toPoint:CGPointMake(220, 150) controlPoint:CGPointMake(200, 320)];
-        [self actionAnimation:btn3 toPoint:CGPointMake(200, 210) controlPoint:CGPointMake(180, 340)];
-        [self actionAnimation:btn4 toPoint:CGPointMake(170, 270) controlPoint:CGPointMake(140, 340)];
-        [self actionAnimation:btn5 toPoint:CGPointMake(120, 320) controlPoint:CGPointMake(80, 360)];
+        [self showMenu];
     }
+}
 
+- (void)showMenu {
+    isShow = YES;
+    [self setBtnAnimation];
+
+    [self actionAnimation:btn1 toPoint:CGPointMake(200, 95)  controlPoint:CGPointMake(240, 300)];
+    [self actionAnimation:btn2 toPoint:CGPointMake(220, 150) controlPoint:CGPointMake(200, 320)];
+    [self actionAnimation:btn3 toPoint:CGPointMake(200, 210) controlPoint:CGPointMake(180, 340)];
+    [self actionAnimation:btn4 toPoint:CGPointMake(170, 270) controlPoint:CGPointMake(140, 340)];
+    [self actionAnimation:btn5 toPoint:CGPointMake(120, 320) controlPoint:CGPointMake(80, 360)];
+}
+
+- (void)hideMenu {
+    isShow = NO;
+    [self setBtnAnimation];
+
+    btn1.hidden = YES;
+    btn2.hidden = YES;
+    btn3.hidden = YES;
+    btn4.hidden = YES;
+    btn5.hidden = YES;
+    [btn1 setCenter:CGPointMake(-16, 360)];
+    [btn2 setCenter:CGPointMake(-16, 360)];
+    [btn3 setCenter:CGPointMake(-16, 360)];
+    [btn4 setCenter:CGPointMake(-16, 360)];
+    [btn5 setCenter:CGPointMake(-16, 360)];
+}
+
+- (void)setBtnAnimation {
+    UIButton *setBtn = (UIButton*)[self.view viewWithTag:11];
+    [UIView animateWithDuration:0.6 animations:^{
+        CGAffineTransform transform = setBtn.transform;
+        transform = CGAffineTransformRotate(transform, rotateDegree(180));
+//        transform = CGAffineTransformMakeRotation(isShow?rotateDegree(180):rotateDegree(-180));
+//        transform = CGAffineTransformScale(transform, isShow?0.5:2, isShow?0.5:2);
+        setBtn.transform = transform;
+    } completion:^(BOOL finished) {
+//        [UIView animateWithDuration:0.3 animations:^{
+//                CGAffineTransform transform = setBtn.transform;
+//                transform = CGAffineTransformRotate(transform, rotateDegree(90));
+//                setBtn.transform = transform;
+//        }];
+    }];
 }
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {

@@ -38,13 +38,20 @@
 {
     [super viewDidLoad];
 
+    [self setNavigationBar];
+
+    [self initBottomView];
+
+    [self initScrollView];
+}
+
+- (void)initBottomView {
     // 输入法改变监听
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWasChanged:) name:UIKeyboardDidChangeFrameNotification object:nil];
 
     keyBoardIsOpen = NO;
     isEng = YES;
 
-    [self setNavigationBar];
     _textView.text = @"";
     [_textView.layer setCornerRadius:10];
     _textView.delegate = self;
@@ -52,14 +59,11 @@
     [_btnSend setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
     [_btnSend setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
     [_btnAdd setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
-    [self initScrollView];
-
-//    测试捕获异常
-//    NSArray *test = [NSArray arrayWithObjects:@"111", nil];
-//    NSLog(@"%@",[NSString stringWithFormat:@"%@",[test objectAtIndex:1]]);
 }
 
 - (void)initScrollView {
+    _scrollView.delegate = self;
+
     NSMutableArray *condition = [[NSMutableArray alloc]init];
     [condition addObject:[NSString stringWithFormat:@" USER_NAME = '%@'",_headerText]];
     NSArray *infos = [[DBCommon shared]selectDB:@"USER_INFO" condition:condition];
@@ -82,6 +86,69 @@
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(inputExit:)];
     recognizer.delegate = self;
     [_scrollView addGestureRecognizer:recognizer];
+
+    UISwipeGestureRecognizer *upRecognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleGesture:)];
+    [upRecognizer setDirection:UISwipeGestureRecognizerDirectionUp];
+    upRecognizer.delegate = self;
+    [_scrollView addGestureRecognizer:upRecognizer];
+    [upRecognizer release];
+
+    UISwipeGestureRecognizer *downRecognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleGesture:)];
+    downRecognizer.delegate = self;
+    [downRecognizer setDirection:UISwipeGestureRecognizerDirectionDown];
+    [_scrollView addGestureRecognizer:downRecognizer];
+    [downRecognizer release];
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    NSLog(@"33333333----%f",scrollView.contentScaleFactor);
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+
+    NSLog(@"qqqqq----%f",scrollView.contentScaleFactor);
+//    NSLog(@"wwwwww----%d",decelerate);
+}
+
+- (void)handleGesture:(UISwipeGestureRecognizer *)gesture {
+    if (!keyBoardIsOpen) {
+        switch (gesture.direction) {
+            case UISwipeGestureRecognizerDirectionDown:
+                [self changeBottomViewLocation:YES];
+                break;
+
+            case UISwipeGestureRecognizerDirectionUp:
+                [self changeBottomViewLocation:NO];
+                break;
+
+            default:
+                break;
+        }
+    }
+}
+
+- (void)changeBottomViewLocation:(BOOL)hidden {
+    if (hidden) {
+        [UIView animateWithDuration:0.6 animations:^{
+            CGRect frame = _bottomView.frame;
+            frame.origin.y += frame.size.height;
+            _bottomView.frame = frame;
+
+            frame = _scrollView.frame;
+            frame.size.height += _bottomView.frame.size.height;
+            _scrollView.frame = frame;
+        }];
+    } else {
+        [UIView animateWithDuration:0.6 animations:^{
+            CGRect frame = _bottomView.frame;
+            frame.origin.y += frame.size.height;
+            _bottomView.frame = frame;
+
+            frame = _scrollView.frame;
+            frame.size.height -= _bottomView.frame.size.height;
+            _scrollView.frame = frame;
+        }];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {

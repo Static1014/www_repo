@@ -12,7 +12,7 @@
 - (void)showOneMsg:(BOOL)hidden withNum:(int)num;
 @end
 
-@interface TwoViewController : UIViewController <UITextViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIGestureRecognizerDelegate>
+@interface TwoViewController : UIViewController <UITextViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIGestureRecognizerDelegate, UIScrollViewDelegate>
 
 @property (retain, nonatomic) id<showOneMsgDelegate> delegate;
 

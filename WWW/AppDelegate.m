@@ -10,11 +10,15 @@
 #import "MyUncaughtExceptionHandler.h"
 #import "MyTabBarController.h"
 #import "DBCommon.h"
+#import "IQKeyboardManager.h"
+#import "IQSegmentedNextPrevious.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [IQKeyboardManager sharedManager];
+
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]autorelease];
 
     [MyUncaughtExceptionHandler setDefaultHandler];

@@ -18,6 +18,16 @@
 		B310E0F31938816000A660A2 /* TwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B310E0F11938816000A660A2 /* TwoViewController.xib */; };
 		B3387D851963AF30005A9D79 /* SixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3387D831963AF30005A9D79 /* SixViewController.m */; };
 		B3387D861963AF30005A9D79 /* SixViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3387D841963AF30005A9D79 /* SixViewController.xib */; };
+		B342DBB419A73A7300C225D0 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B342DB9E19A73A7300C225D0 /* IQKeyboardManager.bundle */; };
+		B342DBB519A73A7300C225D0 /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B342DBA019A73A7300C225D0 /* IQKeyboardManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B342DBB619A73A7300C225D0 /* IQSegmentedNextPrevious.m in Sources */ = {isa = PBXBuildFile; fileRef = B342DBA419A73A7300C225D0 /* IQSegmentedNextPrevious.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B342DBB719A73A7300C225D0 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B342DBA619A73A7300C225D0 /* IQTextView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B342DBB819A73A7300C225D0 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B342DBA819A73A7300C225D0 /* IQTitleBarButtonItem.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B342DBB919A73A7300C225D0 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B342DBAA19A73A7300C225D0 /* IQToolbar.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B342DBBA19A73A7300C225D0 /* NSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = B342DBAD19A73A7300C225D0 /* NSArray+Sort.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B342DBBB19A73A7300C225D0 /* UIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = B342DBAF19A73A7300C225D0 /* UIView+Hierarchy.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B342DBBC19A73A7300C225D0 /* UIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B342DBB119A73A7300C225D0 /* UIView+IQKeyboardToolbar.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B342DBBD19A73A7300C225D0 /* UIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = B342DBB319A73A7300C225D0 /* UIWindow+Hierarchy.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		B37CF35E194EEA9D0064EA15 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37CF35C194EEA9D0064EA15 /* ThreeViewController.m */; };
 		B37CF35F194EEA9D0064EA15 /* ThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37CF35D194EEA9D0064EA15 /* ThreeViewController.xib */; };
 		B37CF363195018070064EA15 /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37CF362195018070064EA15 /* MyTabBarController.m */; };
@@ -34,6 +44,9 @@
 		B37CF37E19501E6F0064EA15 /* FourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37CF37C19501E6F0064EA15 /* FourViewController.xib */; };
 		B37CF38319501EAE0064EA15 /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37CF38119501EAE0064EA15 /* FiveViewController.m */; };
 		B37CF38419501EAE0064EA15 /* FiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37CF38219501EAE0064EA15 /* FiveViewController.xib */; };
+		B37CF44219AAE11B004261EA /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = B37CF43F19AAE11B004261EA /* example.png */; };
+		B37CF44319AAE11C004261EA /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B37CF44119AAE11B004261EA /* UIImageView+LBBlurredImage.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		B37CF44619AAE6F3004261EA /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37CF44519AAE6F3004261EA /* CoreImage.framework */; };
 		B3AA41AA194A867700579A3D /* MyUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA41A9194A867700579A3D /* MyUncaughtExceptionHandler.m */; };
 		B3DCDAA8193EE9C200BAD04B /* DBCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DCDAA7193EE9C200BAD04B /* DBCommon.m */; };
 		B3DCDAAA193EF8D000BAD04B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DCDAA9193EF8D000BAD04B /* libsqlite3.dylib */; };
@@ -187,6 +200,28 @@
 		B3387D821963AF30005A9D79 /* SixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixViewController.h; sourceTree = "<group>"; };
 		B3387D831963AF30005A9D79 /* SixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixViewController.m; sourceTree = "<group>"; };
 		B3387D841963AF30005A9D79 /* SixViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SixViewController.xib; sourceTree = "<group>"; };
+		B342DB9E19A73A7300C225D0 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		B342DB9F19A73A7300C225D0 /* IQKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManager.h; sourceTree = "<group>"; };
+		B342DBA019A73A7300C225D0 /* IQKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManager.m; sourceTree = "<group>"; };
+		B342DBA119A73A7300C225D0 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		B342DBA219A73A7300C225D0 /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		B342DBA319A73A7300C225D0 /* IQSegmentedNextPrevious.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSegmentedNextPrevious.h; sourceTree = "<group>"; };
+		B342DBA419A73A7300C225D0 /* IQSegmentedNextPrevious.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSegmentedNextPrevious.m; sourceTree = "<group>"; };
+		B342DBA519A73A7300C225D0 /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
+		B342DBA619A73A7300C225D0 /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
+		B342DBA719A73A7300C225D0 /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		B342DBA819A73A7300C225D0 /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		B342DBA919A73A7300C225D0 /* IQToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQToolbar.h; sourceTree = "<group>"; };
+		B342DBAA19A73A7300C225D0 /* IQToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQToolbar.m; sourceTree = "<group>"; };
+		B342DBAB19A73A7300C225D0 /* KeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardManager.h; sourceTree = "<group>"; };
+		B342DBAC19A73A7300C225D0 /* NSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sort.h"; sourceTree = "<group>"; };
+		B342DBAD19A73A7300C225D0 /* NSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sort.m"; sourceTree = "<group>"; };
+		B342DBAE19A73A7300C225D0 /* UIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Hierarchy.h"; sourceTree = "<group>"; };
+		B342DBAF19A73A7300C225D0 /* UIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Hierarchy.m"; sourceTree = "<group>"; };
+		B342DBB019A73A7300C225D0 /* UIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		B342DBB119A73A7300C225D0 /* UIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		B342DBB219A73A7300C225D0 /* UIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Hierarchy.h"; sourceTree = "<group>"; };
+		B342DBB319A73A7300C225D0 /* UIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Hierarchy.m"; sourceTree = "<group>"; };
 		B37CF35B194EEA9D0064EA15 /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
 		B37CF35C194EEA9D0064EA15 /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		B37CF35D194EEA9D0064EA15 /* ThreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeViewController.xib; sourceTree = "<group>"; };
@@ -207,6 +242,10 @@
 		B37CF38019501EAE0064EA15 /* FiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveViewController.h; sourceTree = "<group>"; };
 		B37CF38119501EAE0064EA15 /* FiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveViewController.m; sourceTree = "<group>"; };
 		B37CF38219501EAE0064EA15 /* FiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FiveViewController.xib; sourceTree = "<group>"; };
+		B37CF43F19AAE11B004261EA /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
+		B37CF44019AAE11B004261EA /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
+		B37CF44119AAE11B004261EA /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
+		B37CF44519AAE6F3004261EA /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		B3AA41A8194A867700579A3D /* MyUncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		B3AA41A9194A867700579A3D /* MyUncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		B3DCDAA6193EE9C200BAD04B /* DBCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCommon.h; sourceTree = "<group>"; };
@@ -352,6 +391,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B37CF44619AAE6F3004261EA /* CoreImage.framework in Frameworks */,
 				B3DCDAAA193EF8D000BAD04B /* libsqlite3.dylib in Frameworks */,
 				B3E87E5F19357938006F8DF4 /* CoreGraphics.framework in Frameworks */,
 				B3E87E6119357938006F8DF4 /* UIKit.framework in Frameworks */,
@@ -405,6 +445,35 @@
 				B3387D841963AF30005A9D79 /* SixViewController.xib */,
 			);
 			name = Six;
+			sourceTree = "<group>";
+		};
+		B342DB9D19A73A7300C225D0 /* IQKeyBoardManager */ = {
+			isa = PBXGroup;
+			children = (
+				B342DB9E19A73A7300C225D0 /* IQKeyboardManager.bundle */,
+				B342DB9F19A73A7300C225D0 /* IQKeyboardManager.h */,
+				B342DBA019A73A7300C225D0 /* IQKeyboardManager.m */,
+				B342DBA119A73A7300C225D0 /* IQKeyboardManagerConstants.h */,
+				B342DBA219A73A7300C225D0 /* IQKeyboardManagerConstantsInternal.h */,
+				B342DBA319A73A7300C225D0 /* IQSegmentedNextPrevious.h */,
+				B342DBA419A73A7300C225D0 /* IQSegmentedNextPrevious.m */,
+				B342DBA519A73A7300C225D0 /* IQTextView.h */,
+				B342DBA619A73A7300C225D0 /* IQTextView.m */,
+				B342DBA719A73A7300C225D0 /* IQTitleBarButtonItem.h */,
+				B342DBA819A73A7300C225D0 /* IQTitleBarButtonItem.m */,
+				B342DBA919A73A7300C225D0 /* IQToolbar.h */,
+				B342DBAA19A73A7300C225D0 /* IQToolbar.m */,
+				B342DBAB19A73A7300C225D0 /* KeyboardManager.h */,
+				B342DBAC19A73A7300C225D0 /* NSArray+Sort.h */,
+				B342DBAD19A73A7300C225D0 /* NSArray+Sort.m */,
+				B342DBAE19A73A7300C225D0 /* UIView+Hierarchy.h */,
+				B342DBAF19A73A7300C225D0 /* UIView+Hierarchy.m */,
+				B342DBB019A73A7300C225D0 /* UIView+IQKeyboardToolbar.h */,
+				B342DBB119A73A7300C225D0 /* UIView+IQKeyboardToolbar.m */,
+				B342DBB219A73A7300C225D0 /* UIWindow+Hierarchy.h */,
+				B342DBB319A73A7300C225D0 /* UIWindow+Hierarchy.m */,
+			);
+			path = IQKeyBoardManager;
 			sourceTree = "<group>";
 		};
 		B37CF35A194EEA740064EA15 /* Three */ = {
@@ -466,9 +535,21 @@
 			name = Five;
 			sourceTree = "<group>";
 		};
+		B37CF44419AAE125004261EA /* BlurImage */ = {
+			isa = PBXGroup;
+			children = (
+				B37CF43F19AAE11B004261EA /* example.png */,
+				B37CF44019AAE11B004261EA /* UIImageView+LBBlurredImage.h */,
+				B37CF44119AAE11B004261EA /* UIImageView+LBBlurredImage.m */,
+			);
+			name = BlurImage;
+			sourceTree = "<group>";
+		};
 		B3DCDAA5193EE8D500BAD04B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B37CF44419AAE125004261EA /* BlurImage */,
+				B342DB9D19A73A7300C225D0 /* IQKeyBoardManager */,
 				B3DCDAA6193EE9C200BAD04B /* DBCommon.h */,
 				B3DCDAA7193EE9C200BAD04B /* DBCommon.m */,
 				B3DCDAAD193F0E6D00BAD04B /* DBUtil.h */,
@@ -513,6 +594,7 @@
 		B3E87E5B19357938006F8DF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B37CF44519AAE6F3004261EA /* CoreImage.framework */,
 				B3E419B4196A38380097805C /* libcrypto.a */,
 				B3E419B1196A37F90097805C /* libssl.a */,
 				B3DCDAA9193EF8D000BAD04B /* libsqlite3.dylib */,
@@ -873,8 +955,10 @@
 				B37CF37819501A000064EA15 /* tab_s3.png in Resources */,
 				B3FEFC141952C70D0032003D /* shopping_cart_empty.png in Resources */,
 				B3FEFC051952C70D0032003D /* plus_2.png in Resources */,
+				B342DBB419A73A7300C225D0 /* IQKeyboardManager.bundle in Resources */,
 				B3FEFBD91952C70D0032003D /* close_delete_2.png in Resources */,
 				B30E84C6196BE50900689D67 /* 111.png in Resources */,
+				B37CF44219AAE11B004261EA /* example.png in Resources */,
 				B3FEFBF11952C70D0032003D /* information.png in Resources */,
 				B3FEFC191952C70D0032003D /* star_2.png in Resources */,
 				B3FEFBED1952C70D0032003D /* friends_group.png in Resources */,
@@ -921,20 +1005,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3DCDAA8193EE9C200BAD04B /* DBCommon.m in Sources */,
+				B342DBB619A73A7300C225D0 /* IQSegmentedNextPrevious.m in Sources */,
+				B342DBB819A73A7300C225D0 /* IQTitleBarButtonItem.m in Sources */,
+				B342DBBA19A73A7300C225D0 /* NSArray+Sort.m in Sources */,
 				B3E87E8F193579FB006F8DF4 /* OneViewController.m in Sources */,
 				B3E87E6D19357938006F8DF4 /* AppDelegate.m in Sources */,
 				B3E32995194055470041817A /* BusinessUtil.m in Sources */,
+				B37CF44319AAE11C004261EA /* UIImageView+LBBlurredImage.m in Sources */,
+				B342DBB519A73A7300C225D0 /* IQKeyboardManager.m in Sources */,
+				B342DBBC19A73A7300C225D0 /* UIView+IQKeyboardToolbar.m in Sources */,
 				B3387D851963AF30005A9D79 /* SixViewController.m in Sources */,
+				B342DBB719A73A7300C225D0 /* IQTextView.m in Sources */,
 				B3DCDAAF193F0E6D00BAD04B /* DBUtil.m in Sources */,
 				B310E0E619382B6100A660A2 /* OneCell.m in Sources */,
+				B342DBBB19A73A7300C225D0 /* UIView+Hierarchy.m in Sources */,
 				B37CF37D19501E6F0064EA15 /* FourViewController.m in Sources */,
 				B310E0F21938816000A660A2 /* TwoViewController.m in Sources */,
 				B3E18BCA195429D200141B00 /* MyCell.m in Sources */,
 				B3AA41AA194A867700579A3D /* MyUncaughtExceptionHandler.m in Sources */,
+				B342DBB919A73A7300C225D0 /* IQToolbar.m in Sources */,
 				B3E87E6919357938006F8DF4 /* main.m in Sources */,
 				B37CF363195018070064EA15 /* MyTabBarController.m in Sources */,
 				B37CF38319501EAE0064EA15 /* FiveViewController.m in Sources */,
 				B37CF35E194EEA9D0064EA15 /* ThreeViewController.m in Sources */,
+				B342DBBD19A73A7300C225D0 /* UIWindow+Hierarchy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1064,7 +1158,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWW/WWW-Prefix.pch";
 				INFOPLIST_FILE = "WWW/WWW-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1086,7 +1180,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWW/WWW-Prefix.pch";
 				INFOPLIST_FILE = "WWW/WWW-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";

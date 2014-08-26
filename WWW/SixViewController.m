@@ -31,6 +31,8 @@
     over = YES;
 
     [self setNavigationBar];
+
+    [self blurMenuView];
 }
 
 - (void)didReceiveMemoryWarning

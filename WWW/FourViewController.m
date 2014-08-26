@@ -8,6 +8,7 @@
 
 #import "FourViewController.h"
 #import "BusinessUtil.h"
+#import "UIImageView+LBBlurredImage.h"
 
 @interface FourViewController () {
     UIButton *btn1, *btn2, *btn3, *btn4, *btn5;
@@ -26,6 +27,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        [self blurImageWithRadius:20];
     }
     return self;
 }
@@ -37,6 +39,16 @@
     [self initButtons];
 
     [self initGesture];
+}
+
+- (void)blurImageWithRadius:(float)radius {
+    UIImageView *bg = (UIImageView*)[self.view viewWithTag:998];
+
+    [bg setImageToBlur:[UIImage imageNamed:@"example"] blurRadius:radius completionBlock:^(NSError *error){
+        if (error != nil) {
+            NSLog(@"Error with Blur Image!\n%@",error);
+        }
+    }];
 }
 
 - (void)initButtons {
@@ -65,6 +77,8 @@
 
 - (void)clickBtn:(UIButton*)btn {
     [self toast:[NSString stringWithFormat:@"Button's tag is %d",btn.tag] duration:2 parentView:_groupView center:CGPointMake(_groupView.center.x, _groupView.center.y + SCREEN_SIZE.size.height/3)];
+
+    [self blurImageWithRadius:(btn.tag-1)*5];
 }
 
 - (void)didReceiveMemoryWarning

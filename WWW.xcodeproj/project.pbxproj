@@ -18,7 +18,6 @@
 		B310E0F31938816000A660A2 /* TwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B310E0F11938816000A660A2 /* TwoViewController.xib */; };
 		B3387D851963AF30005A9D79 /* SixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3387D831963AF30005A9D79 /* SixViewController.m */; };
 		B3387D861963AF30005A9D79 /* SixViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3387D841963AF30005A9D79 /* SixViewController.xib */; };
-		B342DBB419A73A7300C225D0 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B342DB9E19A73A7300C225D0 /* IQKeyboardManager.bundle */; };
 		B342DBB519A73A7300C225D0 /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B342DBA019A73A7300C225D0 /* IQKeyboardManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		B342DBB619A73A7300C225D0 /* IQSegmentedNextPrevious.m in Sources */ = {isa = PBXBuildFile; fileRef = B342DBA419A73A7300C225D0 /* IQSegmentedNextPrevious.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		B342DBB719A73A7300C225D0 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B342DBA619A73A7300C225D0 /* IQTextView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -47,6 +46,7 @@
 		B37CF44219AAE11B004261EA /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = B37CF43F19AAE11B004261EA /* example.png */; };
 		B37CF44319AAE11C004261EA /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B37CF44119AAE11B004261EA /* UIImageView+LBBlurredImage.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		B37CF44619AAE6F3004261EA /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37CF44519AAE6F3004261EA /* CoreImage.framework */; };
+		B37CF44F19AC3443004261EA /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B37CF44E19AC3443004261EA /* IQKeyboardManager.bundle */; };
 		B3AA41AA194A867700579A3D /* MyUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA41A9194A867700579A3D /* MyUncaughtExceptionHandler.m */; };
 		B3DCDAA8193EE9C200BAD04B /* DBCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DCDAA7193EE9C200BAD04B /* DBCommon.m */; };
 		B3DCDAAA193EF8D000BAD04B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DCDAA9193EF8D000BAD04B /* libsqlite3.dylib */; };
@@ -200,7 +200,6 @@
 		B3387D821963AF30005A9D79 /* SixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixViewController.h; sourceTree = "<group>"; };
 		B3387D831963AF30005A9D79 /* SixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixViewController.m; sourceTree = "<group>"; };
 		B3387D841963AF30005A9D79 /* SixViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SixViewController.xib; sourceTree = "<group>"; };
-		B342DB9E19A73A7300C225D0 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		B342DB9F19A73A7300C225D0 /* IQKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManager.h; sourceTree = "<group>"; };
 		B342DBA019A73A7300C225D0 /* IQKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManager.m; sourceTree = "<group>"; };
 		B342DBA119A73A7300C225D0 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
@@ -246,6 +245,7 @@
 		B37CF44019AAE11B004261EA /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
 		B37CF44119AAE11B004261EA /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
 		B37CF44519AAE6F3004261EA /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		B37CF44E19AC3443004261EA /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		B3AA41A8194A867700579A3D /* MyUncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		B3AA41A9194A867700579A3D /* MyUncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		B3DCDAA6193EE9C200BAD04B /* DBCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCommon.h; sourceTree = "<group>"; };
@@ -450,7 +450,7 @@
 		B342DB9D19A73A7300C225D0 /* IQKeyBoardManager */ = {
 			isa = PBXGroup;
 			children = (
-				B342DB9E19A73A7300C225D0 /* IQKeyboardManager.bundle */,
+				B37CF44E19AC3443004261EA /* IQKeyboardManager.bundle */,
 				B342DB9F19A73A7300C225D0 /* IQKeyboardManager.h */,
 				B342DBA019A73A7300C225D0 /* IQKeyboardManager.m */,
 				B342DBA119A73A7300C225D0 /* IQKeyboardManagerConstants.h */,
@@ -874,6 +874,7 @@
 				B3FEFC131952C70D0032003D /* shopping_cart.png in Resources */,
 				B310E0ED1938702A00A660A2 /* section_bg.png in Resources */,
 				B3FEFC021952C70D0032003D /* pie-chart_graph.png in Resources */,
+				B37CF44F19AC3443004261EA /* IQKeyboardManager.bundle in Resources */,
 				B3FEFBC41952C70D0032003D /* arrow_down.png in Resources */,
 				B30E84C8196BE50900689D67 /* 333.png in Resources */,
 				B3FEFBEE1952C70D0032003D /* help.png in Resources */,
@@ -955,7 +956,6 @@
 				B37CF37819501A000064EA15 /* tab_s3.png in Resources */,
 				B3FEFC141952C70D0032003D /* shopping_cart_empty.png in Resources */,
 				B3FEFC051952C70D0032003D /* plus_2.png in Resources */,
-				B342DBB419A73A7300C225D0 /* IQKeyboardManager.bundle in Resources */,
 				B3FEFBD91952C70D0032003D /* close_delete_2.png in Resources */,
 				B30E84C6196BE50900689D67 /* 111.png in Resources */,
 				B37CF44219AAE11B004261EA /* example.png in Resources */,
